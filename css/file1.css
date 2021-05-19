@@ -1,123 +1,153 @@
-body{
-    background: linear-gradient(to top, #006d77, #363636);
-    background-size: cover;
-    margin-bottom: 90px;
+html
+{
+  background-color: #006d77;
 }
 
-h1{
-    text-align: center;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #e9ecef;
+body
+{
+  background: linear-gradient(to top, #006d77, #363636);
+  background-size: cover;
+  margin: 0%;
 }
 
-button{
-    width: 32px;
-    height: 2px;
-    margin-bottom: 10px;
-    text-align: center;
-    align-items: center;
-    cursor: pointer;
-    
-}
- 
-.Div{
-    text-align: center;
-    margin-top: 50px;
+h1
+{
+  text-align: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #e9ecef;
 }
 
-.sidebar {
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    transition: 0.5s;
-  }
+.btn-click
+{
+  width: 32px;
+  height: 2px;
+  margin-left: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
 
-.sidebar a {
-    display: block;
-    padding: 16px;
-    text-decoration: none;
-  }
+.Div
+{
+  text-align: center;
+  margin-top: 50px;
+}
 
-  .sidebar a:focus {
-    color: white;
-  }
+.sidebar
+{
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  transition: 0.5s;
+}
 
-  .sidebar a:hover.active {
-    color: white;
-  }
+.sidebar::-webkit-scrollbar
+{
+  display: none;
+}
 
-  .sidebar a:hover:not(.active) {
-    color: white;
-  }
+.sidebar a
+{
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+}
 
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
+.sidebar a:focus
+{
+  color: white;
+}
+
+.sidebar a:hover.active
+{
+  color: white;
+}
+
+.sidebar a:hover:not(.active)
+{
+  color: white;
+}
+
+@media screen and (max-width: 700px)
+{
+  .sidebar
+  {
+    width: 100%;
+    height: auto;
+    position: relative;
   }
+  
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
 
 .MyImg{
-    width: 190px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    border-style: groove;
+  width: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border-style: groove;
 }
 
-.btn-primary {
-    width: 250px;
-    height: 40px;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #81b29a;
-    color: #006d77;
-    border: 0px;
-    font-weight: 700;
-    text-align: center;
-    border-radius: 4px;
-    transition: all 180ms ease-in-out 0s;
-    transition-property: all;
-    transition-duration: 180ms;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
+.btn-primary
+{
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #81b29a;
+  color: #006d77;
+  border: 0px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+  transition: all 180ms ease-in-out 0s;
+  transition-property: all;
+  transition-duration: 180ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
 }
 
-.btn-primary:hover, .btn:hover, .btn-op:hover {
-    color: white;
+.btn-primary:hover, .btn:hover, .btn-op:hover
+{
+  color: white;
 }
 
-.btn-op{
-    width: 150px;
-    height: 20px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    background-color: #81b29a;
-    color: #006d77;
-    border: 0px;
-    font-weight: 700;
-    text-align: center;
-    border-radius: 4px;
-    transition: all 180ms ease-in-out 0s;
-    transition-property: all;
-    transition-duration: 180ms;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
+.btn-op
+{
+  width: 150px;
+  height: 15px;
+  margin-left: 1em;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #81b29a;
+  color: #006d77;
+  border: 0px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+  transition: all 180ms ease-in-out 0s;
+  transition-property: all;
+  transition-duration: 180ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
 }
 
-.footer {
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    padding-bottom: 1em;
-    font-size: 0.7em;
+.footer
+{
+  width: 100%;
+  text-align: center;
+  color: #006d77;
+  background: linear-gradient(to top, #303E45, #1E1F24);
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  padding: 1em;
+  font-size: 0.7em;
 }
