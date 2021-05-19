@@ -22,9 +22,47 @@ h1
 
 .btn-click
 {
-  width: 32px;
-  height: 2px;
+  width: 30px;
+  height: 32px;
+  background: none;
+  border: 0px;
   margin-left: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-click div
+{
+  margin-left: -12px;
+}
+
+.btn-click div::before
+{
+  content: "";
+  position: fixed;
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #81b29a;
+  border: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-click div::after
+{
+  content: "";
+  position: fixed;
+  display: flex;
+  width: 30px;
+  height: 4px;
+  margin-top: 10px;
+  background-color: #81b29a;
+  border: 0px;
   margin-bottom: 10px;
   text-align: center;
   align-items: center;
@@ -151,4 +189,9 @@ h1
   position: fixed;
   padding: 1em;
   font-size: 0.7em;
+}
+
+
+.ribbon {
+  background-color: #5BC8F7;
 }
