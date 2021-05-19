@@ -1,7 +1,12 @@
+html
+{
+  background-color: #006d77
+}
+
 body{
     background: linear-gradient(to top, #006d77, #363636);
     background-size: cover;
-    margin-bottom: 90px;
+    margin: 0px;
 }
 
 h1{
@@ -10,6 +15,11 @@ h1{
     margin-left: auto;
     margin-right: auto;
     color: #e9ecef;
+}
+
+section
+{
+  margin-top: 0px;
 }
 
 .Div{
@@ -49,10 +59,12 @@ h1{
 }
 
 .footer {
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    padding-bottom: 1em;
-    font-size: 0.7em;
+  width: 100%;
+  text-align: center;
+  color: #006d77;
+  background: linear-gradient(to top, #303E45, #1E1F24);
+  bottom: 0;
+  position: fixed;
+  padding: 1em;
+  font-size: 0.7em;
 }
