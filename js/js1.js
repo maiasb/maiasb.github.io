@@ -20,6 +20,29 @@ function SideBar() {
     }
 }
 
-function OpenEduc() {
-    console.log("Hello!")
+function SectionE() {
+    if (document.getElementById("sectionE").style.height == "0px"){
+        document.getElementById("sectionE").style.height = "500px"
+    }
+    else{
+        document.getElementById("sectionE").style.height = "0px"
+    }
+}
+
+function SectionC() {
+    if (document.getElementById("sectionC").style.height == "0px"){
+        document.getElementById("sectionC").style.height = "500px"
+    }
+    else{
+        document.getElementById("sectionC").style.height = "0px"
+    }
+}
+
+function SectionD() {
+    if (document.getElementById("sectionD").style.height == "0px"){
+        document.getElementById("sectionD").style.height = "500px"
+    }
+    else{
+        document.getElementById("sectionD").style.height = "0px"
+    }
 }
