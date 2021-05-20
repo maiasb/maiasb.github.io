@@ -23,26 +23,32 @@ function SideBar() {
 function SectionE() {
     if (document.getElementById("sectionE").style.height == "0px"){
         document.getElementById("sectionE").style.height = "500px"
+        document.getElementById("bte").style.backgroundColor = "#527d68";
     }
     else{
         document.getElementById("sectionE").style.height = "0px"
+        document.getElementById("bte").style.backgroundColor = "#81b29a";
     }
 }
 
 function SectionC() {
     if (document.getElementById("sectionC").style.height == "0px"){
         document.getElementById("sectionC").style.height = "500px"
+        document.getElementById("btc").style.backgroundColor = "#527d68";
     }
     else{
         document.getElementById("sectionC").style.height = "0px"
+        document.getElementById("btc").style.backgroundColor = "#81b29a";
     }
 }
 
 function SectionD() {
     if (document.getElementById("sectionD").style.height == "0px"){
         document.getElementById("sectionD").style.height = "500px"
+        document.getElementById("btd").style.backgroundColor = "#527d68";
     }
     else{
         document.getElementById("sectionD").style.height = "0px"
+        document.getElementById("btd").style.backgroundColor = "#81b29a";
     }
 }

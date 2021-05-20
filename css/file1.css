@@ -117,12 +117,7 @@ section{
   text-decoration: none;
 }
 
-.sidebar a:focus
-{
-  color: white;
-}
-
-.sidebar a:hover.active
+.sidebar a:hover
 {
   color: white;
 }
@@ -196,6 +191,13 @@ section{
   transition-duration: 180ms;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+}
+
+.btn-op:hover
+{
+  width: 155px;
+  height: 20px;
+  transition: 0.2s;
 }
 
 .footer
