@@ -22,12 +22,14 @@ h1
 
 .btn-click
 {
-  width: 30px;
+  width: 24px;
   height: 32px;
+  padding: 0px;
+  margin-top: 20px;
+  margin-left: 18px;
+  margin-bottom: 20px;
   background: none;
   border: 0px;
-  margin-left: 1.2em;
-  margin-bottom: 10px;
   text-align: center;
   align-items: center;
   cursor: pointer;
@@ -35,7 +37,16 @@ h1
 
 .btn-click div
 {
-  margin-left: -12px;
+  position: absolute;
+  background-color: #81b29a;
+  padding-bottom: 0px;
+  width: 24px;
+  height: 3px;
+  background: #81b29a;
+  border: 0px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .btn-click div::before
@@ -43,11 +54,11 @@ h1
   content: "";
   position: absolute;
   display: block;
-  width: 30px;
-  height: 4px;
+  width: 24px;
+  height: 3px;
+  top: -7px;
   background-color: #81b29a;
   border: 0px;
-  margin-bottom: 10px;
   text-align: center;
   align-items: center;
   cursor: pointer;
@@ -57,13 +68,12 @@ h1
 {
   content: "";
   position: absolute;
-  display: flex;
-  width: 30px;
-  height: 4px;
-  margin-top: 10px;
+  display: block;
+  width: 24px;
+  height: 3px;
+  top: 7px;
   background-color: #81b29a;
   border: 0px;
-  margin-bottom: 10px;
   text-align: center;
   align-items: center;
   cursor: pointer;
