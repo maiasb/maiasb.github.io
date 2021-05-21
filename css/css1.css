@@ -28,7 +28,9 @@ section{
 .sectionHeight{
   transition: 0.7s;
   height: 0px;
-  
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
 }
 
 .btn-click
@@ -149,6 +151,13 @@ section{
   transition-duration: 180ms;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+}
+
+.btn-primary:hover
+{
+  width: 255px;
+  height: 45px;
+  transition: 0.2s;
 }
 
 .btn-primary:hover, .btn:hover, .btn-op:hover
