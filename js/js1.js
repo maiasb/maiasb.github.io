@@ -24,10 +24,12 @@ function SectionE() {
     if (document.getElementById("sectionE").style.height == "0px"){
         document.getElementById("sectionE").style.height = "500px"
         document.getElementById("bte").style.backgroundColor = "#527d68";
+        document.getElementById("teste").hidden = false
     }
     else{
         document.getElementById("sectionE").style.height = "0px"
         document.getElementById("bte").style.backgroundColor = "#81b29a";
+        document.getElementById("teste").hidden = true
     }
 }
 
