@@ -13,8 +13,8 @@
 <body>
 
     <div>
-        <button class="btn-click" onclick="SideBar()">
-            <div>
+        <button id="btn-click" class="btn-click" onclick="SideBar()">
+            <div id="div-click">
 
             </div>
         </button>
@@ -23,7 +23,7 @@
     <div id="sidebar" class="sidebar" style="width: 0px; height: 0px;">
         <a id="bta" class="btn-op" href="#" onclick="OpenAtual()">Atualmente</a>
         <a id="bte" class="btn-op" href="#" onclick="OpenEducacao()">Educação</a>
-        <a id="btd" class="btn-op" href="#" onclick="OpenD()">About</a>
+        <a id="btd" class="btn-op" href="#" onclick="OpenD()">Certificados</a>
     </div>
 
     <div id="div" class="content">
@@ -62,7 +62,7 @@
         <div id="atualmente" hidden>
             <div>
                 <p>
-                    Atualmente, atuo como desenvolvedor estagiário na 
+                    Atualmente, atuo como desenvolvedor estagiário na
                     <a href="http://www.seap.pa.gov.br/" target="_blank">SEAP</a>, visando a capacitação profissional
                     para o mercado da programação.
                 </p>
@@ -73,7 +73,7 @@
     <section id="sectionEducacao" class="sectionHeight" style="height: 0px;">
         <div id="educacao" hidden>
             <p>
-                
+
             </p>
         </div>
     </section>
@@ -81,12 +81,16 @@
     <section id="sectionD" class="sectionHeight" style="height: 0px;">
         <div id="teste" hidden>
             <p>
-                
+
             </p>
         </div>
     </section>
 
     <div class="footer">Copyright © 2021 | Minha assinatura</div>
+
+    <div class="skew positive"></div>
+
+    <div class="skew negative"></div>
 
 </body>
 

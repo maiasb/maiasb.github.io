@@ -3,20 +3,18 @@ function SideBar() {
         document.getElementById("sidebar").style.height = "250px"
         document.getElementById("sidebar").style.width = "250px"
 
-        // setTimeout(() => {
-        //     document.getElementById("sidebar").style.transition = "0.5s"
-        //     document.getElementById("sidebar").style.width = "250px"
-        // }, 50);
+        let el = document.getElementById('btn-click');
+        el.classList.remove('btn-click');
+        el.classList.add('btn-click2');
 
     }
     else {
         document.getElementById("sidebar").style.width = "0px"
         document.getElementById("sidebar").style.height = "0px"
 
-        // setTimeout(() => {
-        //     document.getElementById("sidebar").style.transition = "0.5s"
-        //     document.getElementById("sidebar").style.height = "0px"
-        // }, 50);
+        let el = document.getElementById('btn-click');
+        el.classList.remove('btn-click2');
+        el.classList.add('btn-click');
     }
 }
 

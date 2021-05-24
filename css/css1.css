@@ -55,11 +55,11 @@ section{
   padding-bottom: 0px;
   width: 24px;
   height: 3px;
-  background: #81b29a;
   border: 0px;
   text-align: center;
   align-items: center;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .btn-click div::before
@@ -75,6 +75,7 @@ section{
   text-align: center;
   align-items: center;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .btn-click div::after
@@ -90,6 +91,70 @@ section{
   text-align: center;
   align-items: center;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-click2
+{
+  width: 24px;
+  height: 32px;
+  padding: 0px;
+  margin-top: 20px;
+  margin-left: 18px;
+  margin-bottom: 20px;
+  background: none;
+  border: 0px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-click2 div
+{
+  position: absolute;
+  background-color: transparent;
+  padding-bottom: 0px;
+  width: 24px;
+  height: 3px;
+  border: 0px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-click2 div::before
+{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 3px;
+  top: 0px;
+  background-color: #81b29a;
+  border: 0px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: rotate(45deg)
+}
+
+.btn-click2 div::after
+{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 3px;
+  top: 0px;
+  background-color: #81b29a;
+  border: 0px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: rotate(-45deg);
 }
 
 .Div
@@ -226,4 +291,13 @@ body::-webkit-scrollbar-thumb {
   
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
+}
+
+.skew {
+  width: 10px;
+  height: 100px;
+  background: black;
+  -webkit-transform: skew(0deg); /* Chrome, Opera */
+      -ms-transform: skew(0deg); /* IE */
+          transform: skew(0deg); /* Padrão */
 }
