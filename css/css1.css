@@ -108,21 +108,6 @@ section{
   transition: 0.5s;
 }
 
-/* VER SOBRE ESTA FUNCIONALIDADE */
-
-@media screen and (max-width: 700px)
-{
-  .sidebar
-  {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
 .sidebar::-webkit-scrollbar
 {
   display: none;
@@ -228,4 +213,17 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background: linear-gradient(to top,#363636, #006d77);
   border-radius: 10px;
+}
+
+@media screen and (max-width: 700px)
+{
+  .sidebar
+  {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
 }
