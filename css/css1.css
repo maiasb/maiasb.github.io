@@ -108,6 +108,21 @@ section{
   transition: 0.5s;
 }
 
+/* VER SOBRE ESTA FUNCIONALIDADE */
+
+@media screen and (max-width: 700px)
+{
+  .sidebar
+  {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
 .sidebar::-webkit-scrollbar
 {
   display: none;
