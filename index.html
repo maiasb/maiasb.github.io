@@ -5,17 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/js1.js"></script>
     <title>Caio Maia</title>
-    <link rel="stylesheet" href="./css/file1.css">
+    <link rel="stylesheet" href="./css/css1.css">
 </head>
 
 <body>
 
     <div>
-        .
+        <button class="btn-click" onclick="SideBar()">
+            <div>
+
+            </div>
+        </button>
     </div>
 
-    <section>
+    <div id="sidebar" class="sidebar" style="width: 0px; height: 0px;">
+        <a id="bta" class="btn-op" href="#" onclick="OpenAtual()">Atualmente</a>
+        <a id="bte" class="btn-op" href="#" onclick="OpenEducacao()">Educação</a>
+        <a id="btd" class="btn-op" href="#" onclick="OpenD()">About</a>
+    </div>
+
+    <div id="div" class="content">
+
+    </div>
+
+    <section id="sectionH">
         <div>
             <h1> Intern Developer </h1>
         </div>
@@ -37,9 +52,37 @@
         </div>
 
         <div class="Div">
-            <a href="mailto:caio.maiasb@gmail.com">
+            <a href="mailto:caio.maiasb@gmail.com" title="Mande um E-mail">
                 <button class="btn-primary"> E-mail </button>
             </a>
+        </div>
+    </section>
+
+    <section id="sectionAtual" class="sectionHeight" style="height: 0px;">
+        <div id="atualmente" hidden>
+            <div>
+                <p>
+                    Atualmente, atuo como desenvolvedor estagiário na 
+                    <a href="http://www.seap.pa.gov.br/" target="_blank">SEAP</a>, visando a capacitação profissional
+                    para o mercado da programação.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sectionEducacao" class="sectionHeight" style="height: 0px;">
+        <div id="educacao" hidden>
+            <p>
+                
+            </p>
+        </div>
+    </section>
+
+    <section id="sectionD" class="sectionHeight" style="height: 0px;">
+        <div id="teste" hidden>
+            <p>
+                
+            </p>
         </div>
     </section>
 
