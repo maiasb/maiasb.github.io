@@ -23,11 +23,15 @@ function OpenAtual() {
         document.getElementById("sectionAtual").style.height = "500px"
         document.getElementById("bta").style.backgroundColor = "#527d68";
         document.getElementById("atualmente").hidden = false
+
+        document.getElementById("sectionAtual").style.paddingTop = "20px";
     }
     else {
         document.getElementById("sectionAtual").style.height = "0px"
         document.getElementById("bta").style.backgroundColor = "#81b29a";
         document.getElementById("atualmente").hidden = true
+
+        document.getElementById("sectionAtual").style.paddingTop = "0px";
     }
 }
 
