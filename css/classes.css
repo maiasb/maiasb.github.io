@@ -115,6 +115,7 @@
 }
 
 .sidebar {
+  min-width: 150px;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -178,6 +179,7 @@
 }
 
 .Div {
+  width: 100%;
   text-align: center;
   margin-top: 50px;
 }
@@ -229,7 +231,16 @@
     width: 100%;
     height: auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
+
+  .btn-a {
+    display: flex;
+    text-decoration:none;
+    margin-left: 10px;
+    margin-right: 5px;
+  }  
   
   .sidebar a {float: left;}
   div.content {margin-left: 0;}

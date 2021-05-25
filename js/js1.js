@@ -1,8 +1,7 @@
 // BOTÃO PARA ABRIR E FECHAR SIDEBAR; ANIMAÇÃO DO BOTÃO;
 function SideBar() {
-    if (document.getElementById("sidebar").style.width == "0px") {
+    if (document.getElementById("sidebar").style.height == "0px") {
         document.getElementById("sidebar").style.height = "250px"
-        document.getElementById("sidebar").style.width = "250px"
 
         let el = document.getElementById('btn-click');
         el.classList.remove('btn-click');
@@ -10,7 +9,6 @@ function SideBar() {
 
     }
     else {
-        document.getElementById("sidebar").style.width = "0px"
         document.getElementById("sidebar").style.height = "0px"
 
         let el = document.getElementById('btn-click');
