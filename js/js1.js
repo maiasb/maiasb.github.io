@@ -1,8 +1,7 @@
 // BOTÃO PARA ABRIR E FECHAR SIDEBAR; ANIMAÇÃO DO BOTÃO;
 function SideBar() {
-    if (document.getElementById("sidebar").style.width == "0px") {
+    if (document.getElementById("sidebar").style.height == "0px") {
         document.getElementById("sidebar").style.height = "250px"
-        document.getElementById("sidebar").style.width = "250px"
 
         let el = document.getElementById('btn-click');
         el.classList.remove('btn-click');
@@ -10,7 +9,6 @@ function SideBar() {
 
     }
     else {
-        document.getElementById("sidebar").style.width = "0px"
         document.getElementById("sidebar").style.height = "0px"
 
         let el = document.getElementById('btn-click');
@@ -25,11 +23,15 @@ function OpenAtual() {
         document.getElementById("sectionAtual").style.height = "500px"
         document.getElementById("bta").style.backgroundColor = "#527d68";
         document.getElementById("atualmente").hidden = false
+
+        document.getElementById("sectionAtual").style.paddingTop = "20px";
     }
     else {
         document.getElementById("sectionAtual").style.height = "0px"
         document.getElementById("bta").style.backgroundColor = "#81b29a";
         document.getElementById("atualmente").hidden = true
+
+        document.getElementById("sectionAtual").style.paddingTop = "0px";
     }
 }
 

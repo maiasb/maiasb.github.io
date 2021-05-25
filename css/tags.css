@@ -7,14 +7,25 @@ body {
   background-size: cover;
   margin: 0%;
   margin-bottom: 90px;
+  overflow-x: hidden;
 }
 
 h1 {
   text-align: center;
-  width: 300px;
   margin-left: auto;
   margin-right: auto;
-  color: #e9ecef;
+  color: #81b29a;
+}
+
+h2 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #81b29a;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
 }
 
 section {
