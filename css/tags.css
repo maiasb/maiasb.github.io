@@ -7,6 +7,7 @@ body {
   background-size: cover;
   margin: 0%;
   margin-bottom: 90px;
+  overflow-x: hidden;
 }
 
 h1 {
