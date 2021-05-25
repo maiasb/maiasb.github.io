@@ -1,3 +1,4 @@
+// BOTÃO PARA ABRIR E FECHAR SIDEBAR; ANIMAÇÃO DO BOTÃO;
 function SideBar() {
     if (document.getElementById("sidebar").style.width == "0px") {
         document.getElementById("sidebar").style.height = "250px"
@@ -18,41 +19,44 @@ function SideBar() {
     }
 }
 
+// BOTÃO PARA ABRIR A SECTION "ATUALMENTE"
 function OpenAtual() {
-    if (document.getElementById("sectionAtual").style.height == "0px"){
+    if (document.getElementById("sectionAtual").style.height == "0px") {
         document.getElementById("sectionAtual").style.height = "500px"
         document.getElementById("bta").style.backgroundColor = "#527d68";
         document.getElementById("atualmente").hidden = false
     }
-    else{
+    else {
         document.getElementById("sectionAtual").style.height = "0px"
         document.getElementById("bta").style.backgroundColor = "#81b29a";
         document.getElementById("atualmente").hidden = true
     }
 }
 
+// BOTÃO PARA ABRIR A SECTION "EDUCAÇÃO"
 function OpenEducacao() {
-    if (document.getElementById("sectionEducacao").style.height == "0px"){
+    if (document.getElementById("sectionEducacao").style.height == "0px") {
         document.getElementById("sectionEducacao").style.height = "500px"
         document.getElementById("bte").style.backgroundColor = "#527d68";
         document.getElementById("educacao").hidden = false
     }
-    else{
+    else {
         document.getElementById("sectionEducacao").style.height = "0px"
         document.getElementById("bte").style.backgroundColor = "#81b29a";
         document.getElementById("educacao").hidden = true
     }
 }
 
+// BOTÃO PARA ABRIR A SECTION "CERTIFICADOS"
 function OpenD() {
-    if (document.getElementById("sectionD").style.height == "0px"){
-        document.getElementById("sectionD").style.height = "500px"
-        document.getElementById("btd").style.backgroundColor = "#527d68";
+    if (document.getElementById("sectionCert").style.height == "0px") {
+        document.getElementById("sectionCert").style.height = "500px"
+        document.getElementById("btc").style.backgroundColor = "#527d68";
         document.getElementById("teste").hidden = false
     }
-    else{
-        document.getElementById("sectionD").style.height = "0px"
-        document.getElementById("btd").style.backgroundColor = "#81b29a";
+    else {
+        document.getElementById("sectionCert").style.height = "0px"
+        document.getElementById("btc").style.backgroundColor = "#81b29a";
         document.getElementById("teste").hidden = true
     }
 }

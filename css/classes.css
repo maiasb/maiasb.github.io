@@ -1,40 +1,4 @@
-html
-{
-  background-color: #006d77;
-}
-
-body
-{
-  background: linear-gradient(to top, #006d77, #363636);
-  background-size: cover;
-  margin: 0%;
-  margin-bottom: 90px;
-}
-
-h1
-{
-  text-align: center;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #e9ecef;
-}
-
-section{
-  margin: 0px;
-  padding: 0px;
-  margin-bottom: 100px;
-}
-
-.sectionHeight{
-  transition: 0.7s;
-  height: 0px;
-  text-align: center;
-  align-items: center;
-}
-
-.btn-click
-{
+.btn-click {
   width: 24px;
   height: 32px;
   padding: 0px;
@@ -48,8 +12,7 @@ section{
   cursor: pointer;
 }
 
-.btn-click div
-{
+.btn-click div {
   position: absolute;
   background-color: #81b29a;
   padding-bottom: 0px;
@@ -62,8 +25,7 @@ section{
   transition: 0.5s;
 }
 
-.btn-click div::before
-{
+.btn-click div::before {
   content: "";
   position: absolute;
   display: block;
@@ -78,8 +40,7 @@ section{
   transition: 0.5s;
 }
 
-.btn-click div::after
-{
+.btn-click div::after {
   content: "";
   position: absolute;
   display: block;
@@ -94,8 +55,7 @@ section{
   transition: 0.5s;
 }
 
-.btn-click2
-{
+.btn-click2 {
   width: 24px;
   height: 32px;
   padding: 0px;
@@ -109,8 +69,7 @@ section{
   cursor: pointer;
 }
 
-.btn-click2 div
-{
+.btn-click2 div {
   position: absolute;
   background-color: transparent;
   padding-bottom: 0px;
@@ -123,8 +82,7 @@ section{
   transition: 0.5s;
 }
 
-.btn-click2 div::before
-{
+.btn-click2 div::before {
   content: "";
   position: absolute;
   display: block;
@@ -140,8 +98,7 @@ section{
   transform: rotate(45deg)
 }
 
-.btn-click2 div::after
-{
+.btn-click2 div::after {
   content: "";
   position: absolute;
   display: block;
@@ -157,14 +114,7 @@ section{
   transform: rotate(-45deg);
 }
 
-.Div
-{
-  text-align: center;
-  margin-top: 50px;
-}
-
-.sidebar
-{
+.sidebar {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -173,65 +123,21 @@ section{
   transition: 0.5s;
 }
 
-.sidebar::-webkit-scrollbar
-{
+.sidebar::-webkit-scrollbar {
   display: none;
 }
 
-.sidebar a
-{
+.sidebar a {
   display: block;
   padding: 16px;
   text-decoration: none;
 }
 
-.sidebar a:hover
-{
+.sidebar a:hover {
   color: white;
 }
 
-.MyImg{
-  width: 190px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  border-style: groove;
-}
-
-.btn-primary
-{
-  width: 250px;
-  height: 40px;
-  cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #81b29a;
-  color: #006d77;
-  border: 0px;
-  font-weight: 700;
-  text-align: center;
-  border-radius: 4px;
-  transition: all 180ms ease-in-out 0s;
-  transition-property: all;
-  transition-duration: 180ms;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
-}
-
-.btn-primary:hover
-{
-  width: 255px;
-  height: 45px;
-  transition: 0.2s;
-}
-
-.btn-primary:hover, .btn:hover, .btn-op:hover
-{
-  color: white;
-}
-
-.btn-op
-{
+.btn-op {
   width: 150px;
   height: 15px;
   margin-left: 1em;
@@ -250,15 +156,62 @@ section{
   transition-delay: 0s;
 }
 
-.btn-op:hover
-{
+.btn-op:hover {
   width: 155px;
   height: 20px;
   transition: 0.2s;
 }
 
-.footer
-{
+.MyImg{
+  width: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border-style: groove;
+}
+
+.sectionHeight {
+  transition: 0.7s;
+  height: 0px;
+  text-align: center;
+  align-items: center;
+}
+
+.Div {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.btn-primary {
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #81b29a;
+  color: #006d77;
+  border: 0px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+  transition: all 180ms ease-in-out 0s;
+  transition-property: all;
+  transition-duration: 180ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+.btn-primary:hover {
+  width: 255px;
+  height: 45px;
+  transition: 0.2s;
+}
+
+.btn-primary:hover, .btn:hover, .btn-op:hover {
+  color: white;
+}
+
+.footer {
   width: 100%;
   text-align: center;
   color: #006d77;
@@ -270,18 +223,7 @@ section{
   font-size: 0.7em;
 }
 
-body::-webkit-scrollbar {
-  width: 10px;
-  background-color: #1C1C1C;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: linear-gradient(to top,#363636, #006d77);
-  border-radius: 10px;
-}
-
-@media screen and (max-width: 700px)
-{
+@media screen and (max-width: 700px) {
   .sidebar
   {
     width: 100%;
@@ -291,13 +233,4 @@ body::-webkit-scrollbar-thumb {
   
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
-}
-
-.skew {
-  width: 10px;
-  height: 100px;
-  background: black;
-  -webkit-transform: skew(0deg); /* Chrome, Opera */
-      -ms-transform: skew(0deg); /* IE */
-          transform: skew(0deg); /* Padrão */
 }
