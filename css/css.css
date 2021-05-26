@@ -1,0 +1,107 @@
+html {
+    background-color: #006d77;
+}
+  
+body {
+    background: linear-gradient(to top, #006d77, #363636);
+    background-size: cover;
+    margin: 0%;
+    margin-bottom: 90px;
+    overflow-x: hidden;
+}
+  
+h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #81b29a;
+}
+
+a {
+    text-decoration: none;
+}
+  
+section {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 100px;
+}
+  
+body::-webkit-scrollbar {
+    width: 10px;
+     background-color: #1C1C1C;
+}
+    
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top,#363636, #006d77);
+    border-radius: 10px;
+}
+  
+.MyImg {
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border-style: groove;
+}
+  
+.Div {
+    text-align: center;
+    margin-top: 50px;
+}
+  
+.btn-primary {
+    width: 250px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #81b29a;
+    color: #006d77;
+    border: 0px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 4px;
+    transition: all 180ms ease-in-out 0s;
+    transition-property: all;
+    transition-duration: 180ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+  
+.btn-primary:hover {
+    width: 255px;
+    height: 45px;
+    transition: 0.2s;
+}
+  
+.btn-primary:hover, .btn:hover, .btn-op:hover {
+    color: white;
+}
+  
+.footer {
+    width: 100%;
+    text-align: center;
+    color: #006d77;
+    background: linear-gradient(to top, #303E45, #1E1F24);
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    padding: 1em;
+    font-size: 0.7em;
+}
+  
+@media screen and (max-width: 700px) {
+    .Div {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  
+    .btn-a {
+      max-width: 250px;
+      display: flex;
+      text-decoration:none;
+      margin-left: auto;
+      margin-right: auto;
+    }  
+}
