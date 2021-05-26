@@ -182,7 +182,6 @@
 }
 
 .Div {
-  width: 100%;
   text-align: center;
   margin-top: 50px;
 }
@@ -238,11 +237,17 @@
     flex-direction: column;
   }
 
+  .Div {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   .btn-a {
+    max-width: 250px;
     display: flex;
     text-decoration:none;
-    margin-left: 10px;
-    margin-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
   }  
   
   .sidebar a {float: left;}
