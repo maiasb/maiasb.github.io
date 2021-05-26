@@ -28,6 +28,19 @@ a {
   text-decoration: none;
 }
 
+section a:link {
+  color: #81b29a;
+}
+
+section a:visited {
+  color: #81b29a;
+}
+
+section a:hover {
+  text-decoration: underline;
+  text-decoration-color: #81b29a;
+}
+
 section {
   margin: 0px;
   padding: 0px;
