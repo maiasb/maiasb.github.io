@@ -105,3 +105,9 @@ body::-webkit-scrollbar-thumb {
       margin-right: auto;
     }  
 }
+
+@media only screen and (max-height: 700px) {
+    section {
+      margin-top: -20px;
+    }
+}
