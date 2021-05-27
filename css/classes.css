@@ -253,3 +253,9 @@
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
 }
+
+@media only screen and (max-height: 700px) {
+  section {
+    margin-top: -50px;
+  }
+}
