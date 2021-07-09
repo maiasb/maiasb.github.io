@@ -1,1 +1,1 @@
-- Criação de Landing Page para o treinamento da tecnologia Css.
+- ### Landing Page para aprendizado de front-end com css e funções javascript.
