@@ -73,6 +73,7 @@
   }
 
   if (!hasGsap || reduce) {
+    document.documentElement.classList.remove('js');
     document.querySelectorAll('.count').forEach(c => c.textContent = c.dataset.to);
     return;
   }
@@ -82,16 +83,16 @@
   /* progresso de rolagem */
   gsap.to('#progressBar', { scaleX: 1, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: .2 } });
 
-  /* ===== CENA 01: linha → pílula → nome ===== */
+  /* ===== CENA 01: pílula revelada da esquerda → nome ===== */
   const tl = gsap.timeline({ defaults: { ease: 'expo.out' } });
-  tl.set('#pill', { clipPath: 'inset(49.5% 50% 49.5% 50% round 999px)' })
+  tl.set('#pill', { clipPath: 'inset(0% 100% 0% 0% round 999px)' })
     .set('.pill .ch', { yPercent: 115 })
     .set([headWords, subWords], { opacity: 0 })
     .set('.ctas > *', { opacity: 0, y: 20 })
     .set('.hero-meta > *', { opacity: 0, y: 10 })
-    .to('#pill', { clipPath: 'inset(49.5% 0% 49.5% 0% round 999px)', duration: .8, ease: 'power3.inOut' })
-    .to('#pill', { clipPath: 'inset(0% 0% 0% 0% round 999px)', duration: .7, ease: 'expo.inOut' })
-    .to('.pill .ch', { yPercent: 0, duration: .9, stagger: .045 }, '-=.25')
+    .add(() => document.documentElement.classList.add('ready'))
+    .to('#pill', { clipPath: 'inset(0% 0% 0% 0% round 999px)', duration: 1, ease: 'expo.inOut' })
+    .to('.pill .ch', { yPercent: 0, duration: .9, stagger: .045 }, '-=.55')
     .fromTo('.echo', { opacity: .7, x: (i) => -60 * (i + 1) }, { opacity: 0, x: 0, duration: 1.1, stagger: .08, ease: 'power3.out', immediateRender: false }, '<')
     .fromTo(headWords, { opacity: 0, y: 40, filter: 'blur(10px)' }, { opacity: 1, y: 0, filter: 'blur(0px)', duration: .8, stagger: .06 }, '-=.7')
     .fromTo(subWords, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: .5, stagger: .025, ease: 'power2.out' }, '-=.5')

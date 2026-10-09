@@ -108,6 +108,13 @@ a { color: inherit; }
   font-size: clamp(64px, 15vw, 210px);
   clip-path: inset(0 0 0 0 round 999px);
 }
+/* estado inicial da abertura (evita flash antes do GSAP assumir) */
+.js .pill { clip-path: inset(0 100% 0 0 round 999px); }
+.js .pill .letters { visibility: hidden; }
+.js.ready .pill .letters { visibility: visible; }
+.js .hero h1, .js .hero .sub { visibility: hidden; }
+.js .hero-meta > *, .js .ctas > * { opacity: 0; }
+.js.ready .hero h1, .js.ready .hero .sub { visibility: visible; }
 .pill .letters { display: inline-flex; overflow: hidden; white-space: nowrap; }
 .pill .ch { display: inline-block; will-change: transform; }
 .pill .sp { width: .22em; }
