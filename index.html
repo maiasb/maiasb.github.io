@@ -1,48 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/css.css">
-    <title>Caio Maia</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MaiaSB</title>
+<meta name="description" content="Caio Maia — Desenvolvedor Full Stack Pleno em Belém-PA. React, Next.js, .NET, Spring Boot, Laravel, AWS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/showreel.css">
 </head>
-
 <body>
-    <div>.</div>
 
-    <section id="sectionH">
-        <div>
-            <h1> Web Developer </h1>
+
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="brand" href="#hero"><i></i><b>CM</b></a>
+    <ul class="mono">
+      <li><a href="#metricas" data-nav="metricas">Números</a></li>
+      <li><a href="#stack" data-nav="stack">Stack</a></li>
+      <li><a href="#projetos" data-nav="projetos">Projetos</a></li>
+      <li><a href="#contato" data-nav="contato">Contato</a></li>
+    </ul>
+    <a class="btn nav-cta" href="#contato">Disponível para projetos</a>
+  </div>
+</nav>
+
+<div class="scene-tag mono" aria-hidden="true"><span>Cena</span><strong id="sceneNum">01</strong><span class="bar"></span><span id="sceneName">Abertura</span></div>
+
+<main>
+  <!-- CENA 01 -->
+  <section class="hero" id="hero" data-scene="01" data-name="Abertura">
+    <div class="wrap">
+      <div class="hero-meta mono">
+        <span><i class="dot"></i>Belém · PA · Brasil</span>
+        <span>Full Stack Pleno</span>
+        <span>5+ anos de mercado</span>
+      </div>
+
+      <div class="name-stage">
+        <div class="echo display" aria-hidden="true">CAIO MAIA</div>
+        <div class="echo display" aria-hidden="true">CAIO MAIA</div>
+        <div class="echo display" aria-hidden="true">CAIO MAIA</div>
+        <div class="pill display" id="pill" aria-label="Caio Maia">
+          <span class="letters" aria-hidden="true"><span class="ch">C</span><span class="ch">A</span><span class="ch">I</span><span class="ch">O</span><span class="ch sp"></span><span class="ch">M</span><span class="ch">A</span><span class="ch">I</span><span class="ch">A</span></span>
         </div>
+      </div>
 
-        <div class="Div">
-            <img class="MyImg" src="Img/MyImg.jpg" alt="Foto de Perfil Caio Maia">
+      <h1 class="display" id="headline">Engineering high&#8209;performance <em>web &amp; enterprise</em> applications.</h1>
+      <p class="sub" id="sub">Desenvolvedor <b>Full Stack Pleno</b> | <b>5+ anos</b> de experiência na criação e evolução de aplicações web robustas (Front-end, Back-end e Cloud).</p>
+
+      <div class="ctas">
+        <a class="btn primary" href="#projetos">Ver projetos
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" href="#contato">Entrar em contato</a>
+      </div>
+    </div>
+    <div class="scroll-hint mono" aria-hidden="true"><span>Role</span><span class="track"></span></div>
+  </section>
+
+  <!-- CENA 02 -->
+  <section class="scene metrics" id="metricas" data-scene="02" data-name="Números">
+    <div class="wrap">
+      <header class="scene-head">
+        <span class="eyebrow mono">Showreel em números</span>
+        <h2 class="display"><span class="trail" data-text="Entregas em escala">Entregas em escala</span></h2>
+        <p>Do Pix de um banco estadual a landing pages de operadoras nacionais: sistemas que rodam todos os dias com gente de verdade do outro lado.</p>
+      </header>
+
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="num"><span class="count" data-to="5">5</span><sup>+</sup></div>
+          <div class="label">Anos de experiência no mercado</div>
+          <div class="note mono">Web · Enterprise · Gov</div>
         </div>
-
-        <div class="Div">
-            <a class="btn-a" href="https://github.com/maiasb" target="_blank" title="Encaminhar ao GitHub">
-                <button class="btn-primary"> GitHub </button>
-            </a>
+        <div class="stat">
+          <div class="num"><span class="count" data-to="10">10</span><sup>+</sup></div>
+          <div class="label">Sistemas de grande porte, aplicações internas e landing pages desenvolvidas</div>
+          <div class="note mono">Banking · Telecom · Gov</div>
         </div>
-
-        <div class="Div">
-            <a class="btn-a" href="https://www.linkedin.com/in/caio-maia-2224651bb/" target="_blank"
-                title="Encaminhar ao Linkedin">
-                <button class="btn-primary"> Linkedin </button>
-            </a>
+        <div class="stat">
+          <div class="num"><span class="count" data-to="5">5</span></div>
+          <div class="label">Empresas e órgãos atendidos</div>
+          <div class="note mono">Dreams Consultoria · Sofintech (BANPARÁ) · Wing Solutions · Cinbesa · SEAP-PA</div>
         </div>
+      </div>
 
-        <div class="Div">
-            <a class="btn-a" href="mailto:caio.maiasb@gmail.com" title="Mande um E-mail">
-                <button class="btn-primary"> E-mail </button>
-            </a>
+      <div class="brands">
+        <span class="eyebrow mono">Top brands / clientes</span>
+        <div class="brand-row" id="brandRow">
+          <span class="b">BANPARÁ</span><span class="b">Oi</span><span class="b">TIM</span><span class="b">Vivo</span><span class="b">Guará Acqua Park</span><span class="b">Lenita Brasil</span><span class="b">SEAP-PA</span>
         </div>
-    </section>
+      </div>
+    </div>
+    <div class="marquee mono" aria-hidden="true">
+      <div class="track" id="marquee">
+        <span><b>Pix</b> · Internet Banking PF/PJ</span><span><b>Mensageria</b> · Oi · TIM · Vivo</span><span><b>GiiG</b> · Prefeitura de Belém</span><span><b>INFOPEN</b> · Gestão carcerária do Pará</span><span><b>Vouchers</b> · Controle financeiro</span><span><b>Next.js</b> · AWS · Tailwind</span>
+        <span><b>Pix</b> · Internet Banking PF/PJ</span><span><b>Mensageria</b> · Oi · TIM · Vivo</span><span><b>GiiG</b> · Prefeitura de Belém</span><span><b>INFOPEN</b> · Gestão carcerária do Pará</span><span><b>Vouchers</b> · Controle financeiro</span><span><b>Next.js</b> · AWS · Tailwind</span>
+      </div>
+    </div>
+  </section>
 
-    <div class="footer">Copyright © 2021 | MaiaSB</div>
+  <!-- CENA 03 -->
+  <section class="scene stack" id="stack" data-scene="03" data-name="Stack">
+    <canvas id="dots" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <header class="scene-head">
+        <span class="eyebrow mono">Tech stack &amp; arquitetura</span>
+        <h2 class="display"><span class="trail" data-text="Do pixel ao cluster">Do pixel ao cluster</span></h2>
+        <p>Interface, API e infraestrutura no mesmo raciocínio. Passe o cursor pelo grid.</p>
+      </header>
+      <div class="stack-grid">
+        <article class="stack-col" data-k="fe">
+          <header><h3>Frontend &amp; UI</h3><span class="mono">01</span></header>
+          <div class="tags"><span class="tag">React.js</span><span class="tag">Next.js</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">Tailwind CSS</span><span class="tag">HTML5 / CSS3</span><span class="tag">Styled-Components</span><span class="tag">Material UI</span><span class="tag">Design Systems (Shadcn/UI)</span></div>
+        </article>
+        <article class="stack-col" data-k="be">
+          <header><h3>Backend &amp; Cloud</h3><span class="mono">02</span></header>
+          <div class="tags"><span class="tag">.NET Core / .NET 8+ · C#</span><span class="tag">Spring Boot · Java</span><span class="tag">Laravel · PHP</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">SQL Server (MSSQL)</span><span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">OpenShift / Kubernetes</span><span class="tag">CI/CD</span></div>
+        </article>
+        <article class="stack-col" data-k="qa">
+          <header><h3>Qualidade, Arquitetura &amp; Práticas</h3><span class="mono">03</span></header>
+          <div class="tags"><span class="tag">Clean Code</span><span class="tag">SOLID</span><span class="tag">Design Patterns</span><span class="tag">RESTful APIs</span><span class="tag">Arquitetura MVC</span><span class="tag">SPA / SSR</span><span class="tag">Scrum / Kanban</span><span class="tag">Playwright / PHPUnit</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CENA 04 -->
+  <section class="scene cases" id="projetos" data-scene="04" data-name="Projetos">
+    <div class="wrap">
+      <header class="scene-head">
+        <span class="eyebrow mono">Cases em destaque</span>
+        <h2 class="display"><span class="trail" data-text="Onde o código roda">Onde o código roda</span></h2>
+        <p>Três frentes, três níveis de exigência: segurança bancária, volume de conversão e velocidade de entrega.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card">
+          <span class="glare"></span>
+          <div class="sector mono"><span>Fintech &amp; Banking</span><b>Sofintech</b></div>
+          <h3>BANPARÁ Internet Banking</h3>
+          <div class="client">Internet Banking PF e PJ</div>
+          <p>Manutenção dos sistemas de Internet Banking (PF e PJ) do BANPARÁ. Atuação direta em transações Pix, agendamento de pagamentos, validação de dados e suporte mobile.</p>
+          <div class="glyph"><span class="mono ok">●</span><span class="mono">PIX · TRANSF. CONCLUÍDA · 200 OK</span></div>
+          <div class="tags"><span class="tag">Spring Boot</span><span class="tag">.NET Framework</span><span class="tag">SQL Server</span><span class="tag">OpenShift</span><span class="tag">IIS</span></div>
+        </article>
+        <article class="card">
+          <span class="glare"></span>
+          <div class="sector mono"><span>Telecom &amp; Vendas</span><b>Wing Solutions</b></div>
+          <h3>Oi · TIM · Vivo</h3>
+          <div class="client">Landing pages e mensageria</div>
+          <p>Landing pages de alta conversão para planos de celular de Oi, TIM e Vivo, além de funcionalidades de gerenciamento de pixels e mensageria.</p>
+          <div class="glyph"><span class="mono ok">↗</span><span class="mono">LP · OFERTA · LEAD CAPTURADO</span></div>
+          <div class="tags"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">AWS</span><span class="tag">PHPUnit</span></div>
+        </article>
+        <article class="card">
+          <span class="glare"></span>
+          <div class="sector mono"><span>Web Apps &amp; Sistemas internos</span><b>Dreams Consultoria</b></div>
+          <h3>Lenita · Partum · Vale das Minas · Guará</h3>
+          <div class="client">Landing pages e sistema do Guará Acqua Park</div>
+          <p>Landing pages para Lenita Brasil, Partum Engenharia e Vale das Minas, e desenvolvimento/manutenção do sistema web interno do Guará Acqua Park (emissão de vouchers e controle financeiro).</p>
+          <div class="glyph"><span class="mono ok">▲</span><span class="mono">BUILD · DEPLOY · AWS</span></div>
+          <div class="tags"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">Playwright</span></div>
+        </article>
+      </div>
+
+      <div class="also">
+        <div><strong>Cinbesa · GiiG</strong><span>Manutenção do sistema GiiG, de prestação de contas públicas da Prefeitura de Belém.</span></div>
+        <div><strong>SEAP-PA · INFOPEN</strong><span>Manutenção do INFOPEN, sistema de gestão carcerária do Pará.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CENA 05 -->
+  <section class="scene cta" id="contato" data-scene="05" data-name="Contato">
+    <div class="wrap">
+      <div class="cta-card">
+        <span class="eyebrow mono">Fechamento</span>
+        <h2 class="display" id="ctaTitle">Vamos construir algo incrível juntos?</h2>
+        <p>Projetos web, sistemas internos ou reforço para o seu time. Fale comigo pelo WhatsApp, e-mail ou LinkedIn.</p>
+        <div class="links">
+          <a class="link" href="https://wa.me/5591980471449" target="_blank" rel="noopener">
+            <span class="mono"><span>WhatsApp</span><span>↗</span></span>
+            <span class="val">(91) 98047-1449</span>
+          </a>
+          <a class="link" href="https://github.com/maiasb" target="_blank" rel="noopener">
+            <span class="mono"><span>GitHub</span><span>↗</span></span>
+            <span class="val">github.com/maiasb</span>
+          </a>
+          <a class="link" href="https://www.linkedin.com/in/maiasb" target="_blank" rel="noopener">
+            <span class="mono"><span>LinkedIn</span><span>↗</span></span>
+            <span class="val">linkedin.com/in/maiasb</span>
+          </a>
+          <div class="link">
+            <span class="mono"><span>E-mail</span><a href="mailto:caio.maiasb@gmail.com" style="text-decoration:none">✉</a></span>
+            <span class="row"><span class="val" id="emailVal">caio.maiasb@gmail.com</span><button class="copy" id="copyBtn" type="button">Copiar</button></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="mono">
+  <div class="wrap"><span>© 2026 Caio Maia · Bacharelando em Sistemas de Informação (UFPA)</span><span>Belém · PA — feito com GSAP</span></div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/showreel.js"></script>
 
 </body>
-
 </html>
