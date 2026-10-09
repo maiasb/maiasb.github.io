@@ -137,7 +137,6 @@
   /* ===== CENA 04: cards ===== */
   gsap.from('.card', { y: 80, rotationX: -18, opacity: 0, duration: 1.1, stagger: .14, ease: 'expo.out', transformOrigin: '50% 100%',
     scrollTrigger: { trigger: '.cards', start: 'top 82%', once: true } });
-  gsap.from('.also > div', { y: 20, opacity: 0, duration: .7, stagger: .1, ease: 'power3.out', scrollTrigger: { trigger: '.also', start: 'top 90%', once: true } });
 
   /* ===== CENA 05: CTA ===== */
   const ctl = gsap.timeline({ scrollTrigger: { trigger: '.cta-card', start: 'top 78%', once: true } });
