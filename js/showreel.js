@@ -17,6 +17,18 @@
     copyBtn.textContent = 'Selecionado';
   }
 
+  /* ---------- header: some ao rolar para baixo, volta ao subir ---------- */
+  const nav = document.querySelector('.nav');
+  let lastY = window.scrollY, navTick = false;
+  const updateNav = () => {
+    const y = window.scrollY, dy = y - lastY;
+    if (y < 80 || dy < -4) nav.classList.remove('nav-hidden');
+    else if (dy > 4) nav.classList.add('nav-hidden');
+    if (Math.abs(dy) > 4) lastY = y;
+    navTick = false;
+  };
+  window.addEventListener('scroll', () => { if (!navTick) { navTick = true; requestAnimationFrame(updateNav); } }, { passive: true });
+
   /* ---------- quebra palavra-a-palavra ---------- */
   function splitWords(el) {
     const walk = (node) => {

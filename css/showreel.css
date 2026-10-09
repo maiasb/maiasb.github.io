@@ -44,7 +44,9 @@ a { color: inherit; }
   position: fixed; top: 0; left: 0; right: 0; z-index: 50;
   padding-top: calc(env(safe-area-inset-top, 0px) + 14px); padding-bottom: 14px;
   background: linear-gradient(to bottom, rgba(13,13,13,.9), rgba(13,13,13,0));
+  transition: transform .35s cubic-bezier(.22,1,.36,1);
 }
+.nav.nav-hidden:not(:focus-within) { transform: translateY(-100%); }
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .brand b { font-family: var(--font-display); font-weight: 900; font-size: 22px; letter-spacing: .02em; }
