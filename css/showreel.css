@@ -232,8 +232,11 @@ section.scene { position: relative; padding-block: clamp(90px, 12vw, 160px); }
   position: relative; overflow: hidden; border-radius: 32px;
   padding: clamp(32px, 6vw, 80px);
   background: var(--blue); color: #fff;
-  display: grid; gap: 28px;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 340px); gap: clamp(28px, 5vw, 64px); align-items: center;
 }
+.cta-copy { display: grid; gap: 28px; min-width: 0; position: relative; }
+.cta-photo { margin: 0; position: relative; border-radius: 24px; overflow: hidden; aspect-ratio: 3 / 4; border: 1px solid rgba(255,255,255,.18); box-shadow: 0 30px 60px -25px rgba(0,0,0,.6); }
+.cta-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block; }
 .cta-card::before {
   content: ""; position: absolute; right: -10%; top: -40%; width: 60%; aspect-ratio: 1; border-radius: 50%;
   background: radial-gradient(circle, rgba(25,240,216,.55), transparent 65%); filter: blur(20px); pointer-events: none;
@@ -266,6 +269,8 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 @media (max-width: 960px) {
   .cards, .stack-grid { grid-template-columns: minmax(0, 1fr); }
   .links { grid-template-columns: minmax(0, 1fr); }
+  .cta-card { grid-template-columns: minmax(0, 1fr); }
+  .cta-photo { order: -1; aspect-ratio: 4 / 3; max-width: 420px; }
   .nav ul { display: none; }
 }
 @media (max-width: 720px) {
