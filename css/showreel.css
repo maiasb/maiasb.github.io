@@ -157,6 +157,26 @@ section.scene { position: relative; padding-block: clamp(90px, 12vw, 160px); }
   -webkit-text-stroke: 1px var(--blue); opacity: 0; pointer-events: none; white-space: nowrap;
 }
 
+/* ---------- CENA 02 · SERVIÇOS ---------- */
+.services { background: var(--bg-2); overflow: hidden; }
+.services canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.services .wrap { position: relative; }
+.services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.service {
+  display: grid; gap: 14px; align-content: start; padding: 28px 26px; border-radius: 24px;
+  border: 1px solid var(--line); background: rgba(18,19,20,.72); color: inherit; text-decoration: none;
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  transition: border-color .25s, background .25s, transform .25s;
+}
+.service:hover { border-color: var(--cyan); background: rgba(25,240,216,.05); transform: translateY(-3px); }
+.service .mono { color: var(--cyan); }
+.service h3 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(30px, 3vw, 40px); line-height: .95; margin: 0; }
+.service p { margin: 0; color: var(--muted); }
+.steps-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.service-cta { background: var(--blue); border-color: var(--blue); }
+.service-cta:hover { background: var(--blue); border-color: var(--cyan); }
+.service-cta .mono, .service-cta p { color: rgba(255,255,255,.88); }
+
 /* ---------- CENA 02 · MÉTRICAS (claro) ---------- */
 .metrics { background: var(--light); color: var(--ink); overflow: hidden; }
 .metrics .eyebrow { color: var(--blue); }
@@ -178,19 +198,6 @@ section.scene { position: relative; padding-block: clamp(90px, 12vw, 160px); }
 .marquee span { color: var(--ink-muted); }
 .marquee span b { color: var(--ink); font-weight: 500; }
 
-/* ---------- CENA 03 · STACK ---------- */
-.stack { background: var(--bg-2); overflow: hidden; }
-.stack canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-.stack .wrap { position: relative; }
-.stack-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.stack-col {
-  min-width: 0; border: 1px solid var(--line); border-radius: 20px; padding: 24px;
-  background: rgba(18,19,20,.72); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
-  display: grid; gap: 18px; align-content: start;
-}
-.stack-col header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
-.stack-col h3 { font-family: var(--font-display); font-weight: 800; text-transform: uppercase; font-size: 30px; margin: 0; letter-spacing: .01em; }
-.stack-col header .mono { color: var(--muted); }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tag {
   display: inline-flex; align-items: center; gap: 8px;
@@ -200,8 +207,6 @@ section.scene { position: relative; padding-block: clamp(90px, 12vw, 160px); }
 }
 .tag::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--c, var(--blue)); }
 .tag:hover { border-color: var(--c, var(--blue)); background: rgba(0,102,255,.12); }
-.stack-col[data-k="be"] .tag { --c: var(--cyan); }
-.stack-col[data-k="qa"] .tag { --c: #9aa3ff; }
 
 /* ---------- CENA 04 · CASES ---------- */
 .cases { background: radial-gradient(70% 60% at 50% 0%, rgba(0,102,255,.14), transparent 70%), var(--bg); }
@@ -222,6 +227,7 @@ section.scene { position: relative; padding-block: clamp(90px, 12vw, 160px); }
 .card h3 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: clamp(32px, 3.2vw, 44px); line-height: .92; margin: 0; transform: translateZ(40px); }
 .card .client { font-weight: 600; color: var(--fg); transform: translateZ(26px); }
 .card p { margin: 0; color: var(--muted); }
+.card p b { color: var(--fg); font-weight: 600; }
 .card .tags { transform: translateZ(20px); }
 .card .tag { font-size: 12px; padding: 6px 11px; }
 .card .glyph { height: 64px; border-radius: 14px; border: 1px dashed var(--line); display: flex; align-items: center; padding-inline: 16px; gap: 10px; transform: translateZ(30px); overflow: hidden; }
@@ -269,7 +275,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 
 /* ---------- responsive ---------- */
 @media (max-width: 960px) {
-  .cards, .stack-grid { grid-template-columns: minmax(0, 1fr); }
+  .cards, .services-grid, .steps-grid { grid-template-columns: minmax(0, 1fr); }
   .links { grid-template-columns: minmax(0, 1fr); }
   .cta-card { grid-template-columns: minmax(0, 1fr); }
   .cta-photo { order: -1; aspect-ratio: 4 / 3; max-width: 420px; }

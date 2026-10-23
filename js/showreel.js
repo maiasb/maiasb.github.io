@@ -58,8 +58,8 @@
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (!e.isIntersecting) return;
-      sceneNum.textContent = e.target.dataset.scene;
-      sceneName.textContent = e.target.dataset.name;
+      if (sceneNum) sceneNum.textContent = e.target.dataset.scene;
+      if (sceneName) sceneName.textContent = e.target.dataset.name;
       navLinks.forEach(a => a.classList.toggle('active', a.dataset.nav === e.target.id));
     });
   }, { rootMargin: '-45% 0px -45% 0px' });
@@ -114,6 +114,9 @@
   /* parallax de saída do hero */
   gsap.to('.name-stage', { yPercent: -30, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
 
+  gsap.set('.service', { y: 30, opacity: 0 });
+  ScrollTrigger.batch('.service', { start: 'top 90%', once: true, onEnter: b => gsap.to(b, { y: 0, opacity: 1, duration: .7, stagger: .08, ease: 'power3.out', overwrite: true }) });
+
   /* ===== títulos com echo trail ===== */
   document.querySelectorAll('.trail').forEach(t => {
     const st = { trigger: t, start: 'top 85%', once: true };
@@ -139,13 +142,6 @@
   gsap.from('.stat', { y: 40, opacity: 0, duration: .9, stagger: .12, ease: 'power3.out', scrollTrigger: { trigger: '.stat-grid', start: 'top 85%', once: true } });
   gsap.from('#brandRow .b', { yPercent: 60, opacity: 0, filter: 'blur(8px)', duration: .8, stagger: .09, ease: 'expo.out', scrollTrigger: { trigger: '#brandRow', start: 'top 88%', once: true } });
   gsap.fromTo('#marquee', { xPercent: 0 }, { xPercent: -50, ease: 'none', scrollTrigger: { trigger: '.metrics', start: 'top bottom', end: 'bottom top', scrub: .5 } });
-
-  /* ===== CENA 03: colunas + tags stagger ===== */
-  document.querySelectorAll('.stack-col').forEach((col, i) => {
-    const st = { trigger: col, start: 'top 85%', once: true };
-    gsap.from(col, { y: 50, opacity: 0, duration: .9, delay: i * .08, ease: 'power3.out', scrollTrigger: st });
-    gsap.from(col.querySelectorAll('.tag'), { scale: .6, opacity: 0, y: 14, duration: .5, delay: .25 + i * .08, stagger: .05, ease: 'back.out(2)', scrollTrigger: st });
-  });
 
   /* ===== CENA 04: cards ===== */
   gsap.from('.card', { y: 80, rotationX: -18, opacity: 0, duration: 1.1, stagger: .14, ease: 'expo.out', transformOrigin: '50% 100%',
