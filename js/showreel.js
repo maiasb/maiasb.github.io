@@ -2,6 +2,12 @@
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const hasGsap = typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined';
 
+  /* ---------- imagem do hero: camada fixa com a mesma altura do hero (mantém o enquadramento) ---------- */
+  const hero = document.getElementById('hero');
+  const syncHeroH = () => hero.style.setProperty('--hero-h', hero.offsetHeight + 'px');
+  syncHeroH();
+  new ResizeObserver(syncHeroH).observe(hero);
+
   /* ---------- copiar e-mail ---------- */
   const copyBtn = document.getElementById('copyBtn');
   copyBtn.addEventListener('click', () => {
