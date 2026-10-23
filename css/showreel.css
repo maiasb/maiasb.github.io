@@ -286,6 +286,10 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   .stat, .stat + .stat { padding: 22px 0; border-left: 0; }
   .stat + .stat { border-top: 1px solid rgba(14,15,17,.15); }
   .scroll-hint { display: none; }
+  .hero { min-height: 0; padding-block: 88px 40px; }
+  .hero .wrap { gap: 16px; }
+  .ctas { flex-wrap: nowrap; }
+  .ctas > .btn { flex: 1 1 0; justify-content: center; padding-inline: 12px; white-space: nowrap; }
   .nav-cta { padding: 8px 14px; font-size: 13px; }
   .nav-right { gap: 8px; }
   .vc-brand { font-size: 18px; gap: 8px; }
