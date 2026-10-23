@@ -107,44 +107,6 @@
           <a class="btn ghost magnetic" href="#projetos">Ver projetos</a>
         </div>
       </div>
-      <div class="phone-wrap reveal">
-        <div class="phone">
-          <div class="phone-glow" aria-hidden="true"></div>
-          <div class="phone-body">
-            <div class="phone-screen">
-              <i class="notch" aria-hidden="true"></i>
-              <div class="view" id="viewPix">
-                <p class="mono dim">Pix enviado</p>
-                <p class="amount">R$ 1.250,00</p>
-                <dl>
-                  <div><dt>De</dt><dd>Maria Souza</dd></div>
-                  <div><dt>Para</dt><dd>Padaria Sol Nascente</dd></div>
-                  <div><dt>Banco</dt><dd>Banco Exemplo</dd></div>
-                  <div><dt>Tipo</dt><dd>Pix à vista</dd></div>
-                  <div><dt>Status</dt><dd class="ok">Concluído</dd></div>
-                </dl>
-                <div class="term" aria-hidden="true"><span class="typed" data-text="PIX · LIQUIDADO EM 2 s"></span></div>
-                <button class="phone-btn" type="button" id="receiptBtn" aria-controls="viewReceipt">Ver comprovante</button>
-              </div>
-              <div class="view" id="viewReceipt" hidden>
-                <div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
-                <p class="mono dim receipt-title">Comprovante de Pix</p>
-                <p class="amount">R$ 1.250,00</p>
-                <dl>
-                  <div><dt>Data</dt><dd id="rcptDate">—</dd></div>
-                  <div><dt>De</dt><dd>Maria Souza</dd></div>
-                  <div><dt>Para</dt><dd>Padaria Sol Nascente</dd></div>
-                  <div><dt>Banco</dt><dd>Banco Exemplo</dd></div>
-                  <div><dt>Transação</dt><dd class="tid">E0000000020000000000EXEMPLO</dd></div>
-                  <div><dt>Status</dt><dd class="ok">Concluído</dd></div>
-                </dl>
-                <p class="fake">Comprovante fictício, só para demonstração.</p>
-                <button class="phone-btn alt" type="button" id="backBtn">Voltar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -199,52 +161,162 @@
     <div class="container">
       <p class="label mono">Projetos</p>
       <h2 class="reveal">Sistemas reais, entregues e em funcionamento.</h2>
-      <div class="grid g3">
+      <div class="grid g2">
         <article class="spot reveal pad project big">
-          <span class="mono dim">Fintech &amp; Banking · Sofintech</span>
-          <h3>BANPARÁ Internet Banking</h3>
-          <p><b>Desafio:</b> sistema financeiro de uso diário, em que Pix e pagamentos precisam funcionar sempre.<br><b>Entrega:</b> manutenção e evolução de transações Pix, agendamento de pagamentos, validação de dados e suporte mobile.</p>
-          <div class="mini-stats">
-            <div><b class="sunset">Pix</b><span>Transações</span></div>
-            <div><b class="sunset">PF + PJ</b><span>Contas</span></div>
-            <div><b class="sunset">Mobile</b><span>Suporte</span></div>
-          </div>
-          <div class="foot">
-            <span class="typed" data-text="PIX · TRANSF. CONCLUÍDA · 200 OK"></span>
-            <div class="pills"><span>Spring Boot</span><span>.NET Framework</span><span>SQL Server</span><span>OpenShift</span><span>IIS</span></div>
+          <div class="big-grid">
+            <div class="big-copy">
+              <span class="mono dim">Fintech &amp; Banking · Sofintech</span>
+              <h3>BANPARÁ Internet Banking</h3>
+              <p><b>Desafio:</b> sistema financeiro de uso diário, em que Pix e pagamentos precisam funcionar sempre.<br><b>Entrega:</b> manutenção e evolução de transações Pix, agendamento de pagamentos, validação de dados e suporte mobile.</p>
+              <div class="mini-stats">
+                <div><b class="sunset">Pix</b><span>Transações</span></div>
+                <div><b class="sunset">PF + PJ</b><span>Contas</span></div>
+                <div><b class="sunset">Mobile</b><span>Suporte</span></div>
+              </div>
+              <div class="foot">
+                <span class="typed" data-text="PIX · TRANSF. CONCLUÍDA · 200 OK"></span>
+                <div class="pills"><span>Spring Boot</span><span>.NET Framework</span><span>SQL Server</span><span>OpenShift</span><span>IIS</span></div>
+              </div>
+            </div>
+            <div class="phone-wrap">
+              <div class="phone">
+                <div class="phone-glow" aria-hidden="true"></div>
+                <div class="phone-body">
+                  <div class="phone-screen">
+                    <i class="notch" aria-hidden="true"></i>
+                    <div class="stack">
+                      <div class="view" id="viewPix">
+                        <p class="mono dim">Pix enviado</p>
+                        <p class="amount">R$ 1.250,00</p>
+                        <dl>
+                          <div><dt>De</dt><dd>Maria Souza</dd></div>
+                          <div><dt>Para</dt><dd>Padaria Sol Nascente</dd></div>
+                          <div><dt>Banco</dt><dd>Banco Exemplo</dd></div>
+                          <div><dt>Tipo</dt><dd>Pix à vista</dd></div>
+                          <div><dt>Status</dt><dd class="ok">Concluído</dd></div>
+                        </dl>
+                        <div class="term" aria-hidden="true"><span class="typed" data-text="PIX · LIQUIDADO EM 2 s"></span></div>
+                        <button class="phone-btn" type="button" id="receiptBtn" aria-controls="viewReceipt">Ver comprovante</button>
+                      </div>
+                      <div class="view" id="viewReceipt" hidden>
+                        <div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+                        <p class="mono dim receipt-title">Comprovante de Pix</p>
+                        <p class="amount">R$ 1.250,00</p>
+                        <dl>
+                          <div><dt>Data</dt><dd id="rcptDate">—</dd></div>
+                          <div><dt>De</dt><dd>Maria Souza</dd></div>
+                          <div><dt>Para</dt><dd>Padaria Sol Nascente</dd></div>
+                          <div><dt>Banco</dt><dd>Banco Exemplo</dd></div>
+                          <div><dt>Transação</dt><dd class="tid">E0000000020000000000EXEMPLO</dd></div>
+                          <div><dt>Status</dt><dd class="ok">Concluído</dd></div>
+                        </dl>
+                        <p class="fake">Comprovante fictício, só para demonstração.</p>
+                        <button class="phone-btn alt" type="button" id="backBtn">Voltar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </article>
+
         <article class="spot reveal pad project">
           <span class="mono dim">Telecom &amp; Vendas · Wing Solutions</span>
           <h3>Oi · TIM · Vivo</h3>
           <p>Criação e manutenção de páginas de venda de planos celulares, landing pages e painéis administrativos. Feitas para converter visitantes em clientes e contatos, com gestão de pixels e mensageria.</p>
+          <div class="widget browser">
+            <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span class="url mono">planos-exemplo.com.br</span></div>
+            <div class="stack">
+              <div class="view" id="wingPlans">
+                <p class="w-title">Escolha o plano ideal</p>
+                <div class="plans">
+                  <button class="plan" type="button" data-plan="20 GB"><b>20 GB</b><span>R$ 49,90<small>/mês</small></span></button>
+                  <button class="plan" type="button" data-plan="40 GB"><b>40 GB</b><span>R$ 69,90<small>/mês</small></span></button>
+                  <button class="plan" type="button" data-plan="80 GB"><b>80 GB</b><span>R$ 99,90<small>/mês</small></span></button>
+                </div>
+              </div>
+              <div class="view" id="wingForm" hidden>
+                <p class="w-title">Plano <span id="wingPick">40 GB</span></p>
+                <div class="field"><span class="mono dim">Nome</span>Maria Souza</div>
+                <div class="field"><span class="mono dim">WhatsApp</span>(91) 90000-0000</div>
+                <button class="phone-btn" type="button" id="wingSend">Quero este plano</button>
+              </div>
+              <div class="view" id="wingDone" hidden>
+                <div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+                <p class="w-title center">Compra realizada!</p>
+                <ul class="log mono">
+                  <li style="--i:0">pixel · Lead · plano <span id="wingLogPlan">40 GB</span></li>
+                  <li style="--i:1">mensagem · WhatsApp enviada</li>
+                  <li style="--i:2">painel · novo contato</li>
+                </ul>
+                <button class="phone-btn alt" type="button" id="wingReset">Recomeçar</button>
+              </div>
+            </div>
+            <p class="demo mono dim">Demonstração · dados fictícios</p>
+          </div>
           <div class="foot">
             <span class="typed" data-text="LP · OFERTA · LEAD CAPTURADO"></span>
             <div class="pills"><span>React</span><span>Next.js</span><span>Laravel</span><span>MySQL</span><span>AWS</span><span>PHPUnit</span></div>
           </div>
         </article>
+
         <article class="spot reveal pad project">
           <span class="mono dim">Web Apps · Dreams Consultoria</span>
           <h3>Guará Acqua Park</h3>
           <p>Sistema web com emissão de vouchers e controle financeiro, além das landing pages dos agenciados.</p>
+          <div class="widget">
+            <div class="kpis">
+              <div><span class="mono dim">Vouchers hoje</span><b id="gCount">12</b></div>
+              <div><span class="mono dim">Arrecadado</span><b id="gTotal">R$ 720</b></div>
+            </div>
+            <div class="ticket" id="gTicket">
+              <svg class="qr" id="gQr" viewBox="0 0 9 9" aria-hidden="true"></svg>
+              <div><p class="mono dim">Voucher · Day use</p><p class="code" id="gCode">GA-7K2Q9</p><p class="mono dim">Válido hoje · 1 pessoa</p></div>
+            </div>
+            <button class="phone-btn" type="button" id="gBtn">Emitir voucher</button>
+            <p class="demo mono dim">Demonstração · dados fictícios</p>
+          </div>
           <div class="foot">
             <span class="typed" data-text="BUILD · DEPLOY · AWS"></span>
             <div class="pills"><span>React</span><span>Next.js</span><span>Tailwind CSS</span><span>PostgreSQL</span><span>Docker</span><span>AWS</span><span>Playwright</span></div>
           </div>
         </article>
+
         <article class="spot reveal pad project">
           <span class="mono dim">Gov · Cinbesa</span>
           <h3>GiiG</h3>
           <p>Manutenção e evolução do sistema público de prestação de contas da Prefeitura de Belém.</p>
+          <div class="widget">
+            <div class="chips" id="giigChips"><button class="chip" type="button" data-m="0">Jul</button><button class="chip" type="button" data-m="1">Ago</button><button class="chip" type="button" data-m="2">Set</button><button class="chip" type="button" data-m="3" aria-pressed="true">Out</button></div>
+            <div class="bars">
+              <div class="bar-row"><span>Receitas</span><div class="track"><i id="giigRec"></i></div><b id="giigRecV"></b></div>
+              <div class="bar-row"><span>Despesas</span><div class="track"><i id="giigDes" class="alt"></i></div><b id="giigDesV"></b></div>
+            </div>
+            <div class="saldo"><span class="mono dim">Saldo do mês</span><b id="giigSaldo"></b></div>
+            <p class="demo mono dim">Painel de exemplo · dados fictícios</p>
+          </div>
           <div class="foot">
             <span class="typed" data-text="GIIG · PRESTAÇÃO DE CONTAS · OK"></span>
             <div class="pills"><span>.NET</span><span>SQL Server</span></div>
           </div>
         </article>
+
         <article class="spot reveal pad project">
           <span class="mono dim">Gov · SEAP-PA</span>
           <h3>INFOPEN</h3>
           <p>Manutenção e evolução do sistema de gestão carcerária do Estado do Pará.</p>
+          <div class="widget">
+            <div class="chips" id="infChips"><button class="chip" type="button" data-p="dia" aria-pressed="true">Dia</button><button class="chip" type="button" data-p="semana">Semana</button><button class="chip" type="button" data-p="mes">Mês</button></div>
+            <div class="kpis one"><div><span class="mono dim">Registros processados</span><b id="infTotal">0</b></div></div>
+            <div class="stackbar" aria-hidden="true"><i id="infOk"></i><i id="infAna" class="b"></i><i id="infPen" class="c"></i></div>
+            <ul class="legend mono">
+              <li><i></i>Concluídos <b id="infOkV"></b></li>
+              <li><i class="b"></i>Em análise <b id="infAnaV"></b></li>
+              <li><i class="c"></i>Pendentes <b id="infPenV"></b></li>
+            </ul>
+            <p class="demo mono dim">Painel de exemplo · dados fictícios</p>
+          </div>
           <div class="foot">
             <span class="typed" data-text="INFOPEN · GESTÃO CARCERÁRIA · OK"></span>
             <div class="pills"><span>.NET</span><span>SQL Server</span></div>
