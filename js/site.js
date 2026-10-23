@@ -176,6 +176,49 @@
   });
   infSet('dia');
 
+  /* hero: assistente de IA em roteiro fixo (demonstração, sem modelo real) */
+  const chatLog = document.getElementById('chatLog');
+  const chatWrap = document.querySelector('.chat-wrap');
+  const scripts = [
+    [['u', 'Oi! Tem horário amanhã de manhã?'], ['t', 'consultando agenda', '3 horários livres'], ['a', 'Tenho 9h, 10h30 e 11h. Qual prefere?'], ['u', '10h30, por favor'], ['t', 'criando agendamento', 'confirmado'], ['a', 'Pronto! Agendado para amanhã às 10h30. Enviei a confirmação no seu WhatsApp.']],
+    [['u', 'Quanto falta pagar do pedido 1042?'], ['t', 'buscando pedido 1042', 'R$ 189,90 em aberto'], ['a', 'São R$ 189,90, com vencimento na sexta. Quer pagar por Pix?'], ['u', 'Quero!'], ['t', 'gerando cobrança Pix', 'QR Code pronto'], ['a', 'Enviei o QR Code aqui. Aviso você assim que o pagamento cair.']],
+    [['u', 'Vocês têm o tênis preto no 42?'], ['t', 'consultando estoque', '3 unidades'], ['a', 'Temos 3 unidades. Posso reservar uma para retirada hoje?'], ['u', 'Pode reservar'], ['t', 'registrando reserva', 'reservado'], ['a', 'Reservado até as 18h. Te espero na loja!']],
+  ];
+  const addEl = (cls, text = '') => { const el = document.createElement('div'); el.className = cls; el.textContent = text; chatLog.appendChild(el); return el; };
+  if (reduce) {
+    scripts[0].forEach(([k, a, b]) => addEl(k === 'u' ? 'msg u' : k === 'a' ? 'msg a' : 'tool done', k === 't' ? a + ' · ' + b : a));
+  } else {
+    let token = 0, idx = 0, visible = false;
+    const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+    const play = async () => {
+      const my = ++token, live = () => my === token;
+      while (live()) {
+        chatLog.replaceChildren();
+        for (const [kind, a, b] of scripts[idx]) {
+          if (kind === 'u') { addEl('msg u', a); await sleep(900); }
+          else if (kind === 't') {
+            const t = addEl('tool', a + '…'); await sleep(1100);
+            if (!live()) return;
+            t.className = 'tool done'; t.textContent = a + ' · ' + b; await sleep(500);
+          } else {
+            const dots = addEl('msg a typing'); dots.innerHTML = '<i></i><i></i><i></i>'; await sleep(700);
+            if (!live()) return;
+            dots.className = 'msg a'; dots.textContent = '';
+            for (let i = 1; i <= a.length; i++) { dots.textContent = a.slice(0, i); await sleep(22); if (!live()) return; }
+            await sleep(1000);
+          }
+          if (!live()) return;
+        }
+        await sleep(2600);
+        idx = (idx + 1) % scripts.length;
+      }
+    };
+    /* só anima enquanto o hero está visível e a aba ativa */
+    const sync = () => { if (visible && !document.hidden) play(); else token++; };
+    new IntersectionObserver(([e]) => { visible = e.isIntersecting; sync(); }).observe(chatWrap);
+    document.addEventListener('visibilitychange', sync);
+  }
+
   /* copiar e-mail */
   const copyBtn = document.getElementById('copyBtn');
   copyBtn.addEventListener('click', async () => {

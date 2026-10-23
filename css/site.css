@@ -257,6 +257,28 @@ footer .container { display: flex; flex-wrap: wrap; justify-content: space-betwe
 footer a { text-decoration: none; } footer a:hover { color: var(--fg); }
 .wa-float { display: none; position: fixed; right: 20px; bottom: 20px; z-index: 55; width: 56px; height: 56px; align-items: center; justify-content: center; border-radius: 50%; background: var(--sunset); color: var(--primary-fg); font-weight: 700; text-decoration: none; box-shadow: var(--glow); }
 
+/* hero: assistente de IA (demonstração em roteiro fixo) */
+.chat { position: relative; width: 100%; max-width: 400px; margin-inline: auto; }
+.chat-glow { position: absolute; inset: -32px; border-radius: 50%; background: var(--sunset); opacity: .22; filter: blur(56px); }
+.chat-win { position: relative; display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: 1.5rem; background: color-mix(in oklab, var(--card) 82%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: var(--glow); overflow: hidden; }
+.chat-head { display: flex; align-items: center; gap: 10px; padding: 14px 18px; border-bottom: 1px solid var(--border); font-size: 14px; }
+.chat-head .mono { margin-left: auto; font-size: 10px; color: var(--muted); }
+.ai-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--sunset); box-shadow: 0 0 12px color-mix(in oklab, var(--primary) 70%, transparent); animation: pulse 1.8s ease-in-out infinite; }
+.chat-log { display: flex; flex-direction: column; justify-content: flex-end; gap: 10px; height: 340px; padding: 16px; overflow: hidden; mask-image: linear-gradient(to bottom, transparent, #000 14%); -webkit-mask-image: linear-gradient(to bottom, transparent, #000 14%); }
+.msg { max-width: 86%; padding: 10px 14px; border-radius: 16px; font-size: 14px; line-height: 1.45; animation: view-in .3s ease-out; }
+.msg.u { align-self: flex-end; border-bottom-right-radius: 4px; background: var(--sunset); color: var(--primary-fg); font-weight: 500; }
+.msg.a { align-self: flex-start; border-bottom-left-radius: 4px; background: var(--secondary); }
+.msg.typing { display: flex; gap: 4px; padding-block: 14px; }
+.msg.typing i { width: 6px; height: 6px; border-radius: 50%; background: var(--muted); animation: pulse 1s ease-in-out infinite; }
+.msg.typing i:nth-child(2) { animation-delay: .15s; } .msg.typing i:nth-child(3) { animation-delay: .3s; }
+.tool { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px; border: 1px dashed var(--border); border-radius: 99px; font: 11px var(--font-mono); color: var(--muted); animation: view-in .3s ease-out; }
+.tool::before { content: ""; width: 10px; height: 10px; border: 2px solid var(--muted); border-top-color: transparent; border-radius: 50%; animation: spin .7s linear infinite; }
+.tool.done { color: var(--success); border-color: color-mix(in oklab, var(--success) 40%, transparent); }
+.tool.done::before { width: auto; height: auto; border: 0; content: "✓"; animation: none; }
+.chat-input { display: flex; align-items: center; justify-content: space-between; margin: 0 16px 16px; padding: 10px 10px 10px 16px; border: 1px solid var(--border); border-radius: 99px; font-size: 13px; color: var(--muted); }
+.chat-input i { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--sunset); color: var(--primary-fg); font-style: normal; font-weight: 700; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
 /* animações */
 .js .reveal { opacity: 0; transform: translateY(28px); filter: blur(8px); transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1), filter .9s; }
 .js .reveal.in { opacity: 1; transform: none; filter: none; }
@@ -267,6 +289,7 @@ footer a { text-decoration: none; } footer a:hover { color: var(--fg); }
 
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; }
+  .chat-log { height: 300px; }
   .g3 { grid-template-columns: 1fr; }
   .g2 { grid-template-columns: 1fr; }
   .span2 { grid-column: auto; }
