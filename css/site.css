@@ -135,7 +135,7 @@ em { font-style: normal; }
 .project h3 { margin-top: 16px; }
 .project.big { grid-column: span 2; grid-row: span 2; }
 .project.big h3 { font-size: clamp(32px, 4vw, 48px); }
-.mini-stats { margin-top: 32px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.mini-stats { margin-top: 32px; display: grid; grid-template-columns: 1fr; gap: 12px; }
 .mini-stats div { padding: 16px; border: 1px solid var(--border); border-radius: 12px; background: color-mix(in oklab, var(--secondary) 50%, transparent); }
 .mini-stats b { display: block; font: 700 24px var(--font-display); }
 .mini-stats span { font-size: 12px; color: var(--muted); }
