@@ -8,7 +8,7 @@
 <meta name="author" content="Caio Maia Almeida">
 <meta name="keywords" content="desenvolvedor em Belém, criação de sites, landing page, desenvolvimento de sistemas, aplicativos mobile, inteligência artificial, chatbot, automação, freelancer">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#0d0d0d">
+<meta name="theme-color" content="#14100d">
 <link rel="canonical" href="https://odevmaia.com.br/">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
@@ -72,278 +72,250 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@650&display=swap">
-<script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="css/showreel.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@650&display=swap">
+<link rel="stylesheet" href="css/site.css">
 </head>
 <body>
 
-
-<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
-
-<nav class="nav" aria-label="Principal">
-  <div class="wrap">
-    <a class="brand" href="#hero"><i></i><b>CM</b></a>
-    <ul class="mono">
-      <li><a href="#servicos" data-nav="servicos">Serviços</a></li>
-      <li><a href="#projetos" data-nav="projetos">Projetos</a></li>
-      <li><a href="#processo" data-nav="processo">Como funciona</a></li>
-      <li><a href="#sobre" data-nav="sobre">Sobre mim</a></li>
-      <li><a href="#contato" data-nav="contato">Contato</a></li>
+<header class="nav-wrap" id="nav">
+  <nav class="nav" aria-label="Principal">
+    <a class="logo" href="#hero">maia<span>.dev</span></a>
+    <ul>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#processo">Processo</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
     </ul>
     <div class="nav-right">
       <a class="vc-brand" href="https://vulpin-code.vercel.app/" target="_blank" rel="noopener" aria-label="VulpinCode (abre em nova aba)"><img class="vc-brand-icon" src="img/vulpincode-icon.webp" alt="" width="256" height="256"><span>VulpinCode</span></a>
-      <a class="btn nav-cta" href="https://wa.me/5591980471449?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento</a>
+      <a class="nav-cta" href="https://wa.me/5591980471449?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Orçamento</a>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
 <main>
-  <!-- CENA 01 -->
-  <section class="hero" id="hero" data-scene="01" data-name="Abertura">
+  <section class="hero" id="hero">
     <div class="hero-bg" aria-hidden="true"></div>
-    <div class="wrap">
-      <div class="hero-meta mono">
-        <span><i class="dot"></i>Belém · PA · Brasil</span>
-        <span>Sites · Sistemas · Apps · IA</span>
-      </div>
-
-      <div class="name-stage">
-        <div class="echo display" aria-hidden="true">MAIA.DEV</div>
-        <div class="echo display" aria-hidden="true">MAIA.DEV</div>
-        <div class="echo display" aria-hidden="true">MAIA.DEV</div>
-        <div class="pill display" id="pill" aria-label="Maia.dev">
-          <span class="letters" aria-hidden="true"><span class="ch">M</span><span class="ch">A</span><span class="ch">I</span><span class="ch">A</span><span class="ch">.</span><span class="ch">D</span><span class="ch">E</span><span class="ch">V</span></span>
+    <div class="container hero-grid">
+      <div>
+        <div class="badge reveal mono"><i class="pulse"></i>Disponível para novos projetos · Belém, PA</div>
+        <h1 class="reveal">Seu negócio no ar com <em class="sunset">site, sistema, app e IA</em> sob medida.</h1>
+        <p class="lead reveal">Sou Caio Maia, desenvolvedor em Belém. Crio <b>sites, sistemas web, aplicativos e soluções com IA</b> para pequenas e médias empresas.</p>
+        <div class="ctas reveal">
+          <a class="btn primary magnetic" href="https://wa.me/5591980471449?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento ↗</a>
+          <a class="btn ghost magnetic" href="#projetos">Ver projetos</a>
         </div>
       </div>
-
-      <h1 class="display" id="headline">Seu negócio no ar com <em>site, sistema, app e IA</em> sob medida.</h1>
-      <p class="sub" id="sub">Sou Caio Maia, desenvolvedor em Belém. Crio <b>sites, sistemas web, aplicativos e soluções com IA</b> para pequenas e médias empresas.</p>
-
-      <div class="ctas">
-        <a class="btn primary" href="https://wa.me/5591980471449?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn" href="#servicos">Ver serviços</a>
+      <div class="phone-wrap reveal">
+        <div class="phone">
+          <div class="phone-glow" aria-hidden="true"></div>
+          <div class="phone-body">
+            <div class="phone-screen">
+              <i class="notch" aria-hidden="true"></i>
+              <div class="view" id="viewPix">
+                <p class="mono dim">Pix enviado</p>
+                <p class="amount">R$ 1.250,00</p>
+                <dl>
+                  <div><dt>De</dt><dd>Maria Souza</dd></div>
+                  <div><dt>Para</dt><dd>Padaria Sol Nascente</dd></div>
+                  <div><dt>Banco</dt><dd>Banco Exemplo</dd></div>
+                  <div><dt>Tipo</dt><dd>Pix à vista</dd></div>
+                  <div><dt>Status</dt><dd class="ok">Concluído</dd></div>
+                </dl>
+                <div class="term" aria-hidden="true"><span class="typed" data-text="PIX · LIQUIDADO EM 2 s"></span></div>
+                <button class="phone-btn" type="button" id="receiptBtn" aria-controls="viewReceipt">Ver comprovante</button>
+              </div>
+              <div class="view" id="viewReceipt" hidden>
+                <div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+                <p class="mono dim receipt-title">Comprovante de Pix</p>
+                <p class="amount">R$ 1.250,00</p>
+                <dl>
+                  <div><dt>Data</dt><dd id="rcptDate">—</dd></div>
+                  <div><dt>De</dt><dd>Maria Souza</dd></div>
+                  <div><dt>Para</dt><dd>Padaria Sol Nascente</dd></div>
+                  <div><dt>Banco</dt><dd>Banco Exemplo</dd></div>
+                  <div><dt>Transação</dt><dd class="tid">E0000000020000000000EXEMPLO</dd></div>
+                  <div><dt>Status</dt><dd class="ok">Concluído</dd></div>
+                </dl>
+                <p class="fake">Comprovante fictício, só para demonstração.</p>
+                <button class="phone-btn alt" type="button" id="backBtn">Voltar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CENA 02 -->
-  <section class="scene services" id="servicos" data-scene="02" data-name="Serviços">
-    <canvas id="dots" aria-hidden="true"></canvas>
-    <div class="wrap">
-      <header class="scene-head">
-        <h2 class="display"><span class="trail" data-text="O que eu faço">O que eu faço</span></h2>
-        <p>Soluções sob medida para o seu negócio, da primeira conversa à entrega e ao suporte.</p>
-      </header>
-      <div class="services-grid">
-        <article class="service">
-          <span class="mono">01</span>
+  <section class="clients" aria-label="Clientes">
+    <div class="marquee-mask">
+      <div class="marquee-track">
+        <span>BANPARÁ</span><span>Oi</span><span>TIM</span><span>Vivo</span><span>Cinbesa</span><span>SEAP-PA</span><span>Dreams Consultoria</span><span>Wing Solutions</span><span>Guará Acqua Park</span>
+        <span aria-hidden="true">BANPARÁ</span><span aria-hidden="true">Oi</span><span aria-hidden="true">TIM</span><span aria-hidden="true">Vivo</span><span aria-hidden="true">Cinbesa</span><span aria-hidden="true">SEAP-PA</span><span aria-hidden="true">Dreams Consultoria</span><span aria-hidden="true">Wing Solutions</span><span aria-hidden="true">Guará Acqua Park</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="servicos">
+    <div class="container">
+      <p class="label mono">Serviços</p>
+      <h2 class="reveal">Tudo que o seu negócio precisa para crescer online.</h2>
+      <div class="grid g3">
+        <article class="spot reveal pad">
+          <span class="num-tag mono">01</span>
           <h3>Sites e landing pages</h3>
           <p>Páginas rápidas e otimizadas para o Google, pensadas para gerar contatos e vendas.</p>
         </article>
-        <article class="service">
-          <span class="mono">02</span>
+        <article class="spot reveal pad">
+          <span class="num-tag mono">02</span>
           <h3>Sistemas web sob medida</h3>
           <p>Agendamento, vendas, financeiro e controle interno, do jeito que o seu negócio funciona.</p>
         </article>
-        <article class="service">
-          <span class="mono">03</span>
+        <article class="spot reveal pad">
+          <span class="num-tag mono">03</span>
           <h3>Aplicativos mobile</h3>
           <p>Apps para Android e iOS, prontos para publicar nas lojas.</p>
         </article>
-        <article class="service">
-          <span class="mono">04</span>
+        <article class="spot reveal pad span2">
+          <span class="num-tag mono">04</span>
           <h3>Inteligência artificial</h3>
           <p>Chatbots, agentes que trabalham dentro do seu sistema, integração com seus dados e automação de tarefas repetitivas. Se o seu negócio precisa de uma solução com IA, eu construo.</p>
         </article>
-        <article class="service">
-          <span class="mono">05</span>
+        <article class="spot reveal pad">
+          <span class="num-tag mono">05</span>
           <h3>Integrações e manutenção</h3>
           <p>Pix, pagamentos, WhatsApp e outros sistemas, além de evolução e suporte do que você já tem.</p>
         </article>
-        <a class="service service-cta" href="https://wa.me/5591980471449?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+        <a class="cta-tile reveal" href="https://wa.me/5591980471449?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
           <span class="mono">Vamos conversar</span>
-          <h3>Conte o que você precisa</h3>
-          <p>Respondo pelo WhatsApp com um caminho e uma proposta.</p>
+          <strong>Conte o que você precisa <i>→</i></strong>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- CENA 03 -->
-  <section class="scene cases" id="projetos" data-scene="03" data-name="Projetos">
-    <div class="wrap">
-      <header class="scene-head">
-        <h2 class="display"><span class="trail" data-text="Trabalhos em uso">Trabalhos em uso</span></h2>
-        <p>Do site ao sistema bancário: projetos reais, entregues e em funcionamento.</p>
-      </header>
-
-      <div class="cards">
-        <article class="card">
-          <span class="glare"></span>
-          <div class="sector mono"><span>Fintech &amp; Banking</span><b>Sofintech</b></div>
+  <section class="section" id="projetos">
+    <div class="container">
+      <p class="label mono">Projetos</p>
+      <h2 class="reveal">Sistemas reais, entregues e em funcionamento.</h2>
+      <div class="grid g3">
+        <article class="spot reveal pad project big">
+          <span class="mono dim">Fintech &amp; Banking · Sofintech</span>
           <h3>BANPARÁ Internet Banking</h3>
-          <div class="client">Internet Banking PF e PJ</div>
           <p><b>Desafio:</b> sistema financeiro de uso diário, em que Pix e pagamentos precisam funcionar sempre.<br><b>Entrega:</b> manutenção e evolução de transações Pix, agendamento de pagamentos, validação de dados e suporte mobile.</p>
-          <div class="glyph"><span class="mono ok">●</span><span class="mono">PIX · TRANSF. CONCLUÍDA · 200 OK</span></div>
-          <div class="tags"><span class="tag">Spring Boot</span><span class="tag">.NET Framework</span><span class="tag">SQL Server</span><span class="tag">OpenShift</span><span class="tag">IIS</span></div>
+          <div class="mini-stats">
+            <div><b class="sunset">Pix</b><span>Transações</span></div>
+            <div><b class="sunset">PF + PJ</b><span>Contas</span></div>
+            <div><b class="sunset">Mobile</b><span>Suporte</span></div>
+          </div>
+          <div class="foot">
+            <span class="typed" data-text="PIX · TRANSF. CONCLUÍDA · 200 OK"></span>
+            <div class="pills"><span>Spring Boot</span><span>.NET Framework</span><span>SQL Server</span><span>OpenShift</span><span>IIS</span></div>
+          </div>
         </article>
-        <article class="card">
-          <span class="glare"></span>
-          <div class="sector mono"><span>Telecom &amp; Vendas</span><b>Wing Solutions</b></div>
+        <article class="spot reveal pad project">
+          <span class="mono dim">Telecom &amp; Vendas · Wing Solutions</span>
           <h3>Oi · TIM · Vivo</h3>
-          <div class="client">Landing pages e mensageria</div>
-          <p><b>Desafio:</b> transformar visitantes em contatos para planos de celular de grandes operadoras.<br><b>Entrega:</b> landing pages de alta conversão, gerenciamento de pixels e mensageria.</p>
-          <div class="glyph"><span class="mono ok">↗</span><span class="mono">LP · OFERTA · LEAD CAPTURADO</span></div>
-          <div class="tags"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">AWS</span><span class="tag">PHPUnit</span></div>
+          <p>Landing pages de alta conversão, gerenciamento de pixels e mensageria para planos de celular.</p>
+          <div class="foot">
+            <span class="typed" data-text="LP · OFERTA · LEAD CAPTURADO"></span>
+            <div class="pills"><span>React</span><span>Next.js</span><span>Laravel</span><span>MySQL</span><span>AWS</span><span>PHPUnit</span></div>
+          </div>
         </article>
-        <article class="card">
-          <span class="glare"></span>
-          <div class="sector mono"><span>Web Apps &amp; Sistemas internos</span><b>Dreams Consultoria</b></div>
-          <h3>Lenita · Partum · Vale das Minas · Guará</h3>
-          <div class="client">Landing pages e sistema do Guará Acqua Park</div>
-          <p><b>Desafio:</b> presença online para empresas e controle interno de um parque aquático.<br><b>Entrega:</b> landing pages para Lenita Brasil, Partum Engenharia e Vale das Minas, e o sistema web do Guará Acqua Park, com emissão de vouchers e controle financeiro.</p>
-          <div class="glyph"><span class="mono ok">▲</span><span class="mono">BUILD · DEPLOY · AWS</span></div>
-          <div class="tags"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">Playwright</span></div>
+        <article class="spot reveal pad project">
+          <span class="mono dim">Web Apps · Dreams Consultoria</span>
+          <h3>Guará Acqua Park</h3>
+          <p>Sistema web com emissão de vouchers e controle financeiro, além das landing pages de Lenita Brasil, Partum Engenharia e Vale das Minas.</p>
+          <div class="foot">
+            <span class="typed" data-text="BUILD · DEPLOY · AWS"></span>
+            <div class="pills"><span>React</span><span>Next.js</span><span>Tailwind CSS</span><span>PostgreSQL</span><span>Docker</span><span>AWS</span><span>Playwright</span></div>
+          </div>
         </article>
-        <article class="card">
-          <span class="glare"></span>
-          <div class="sector mono"><span>Gov &amp; Finanças públicas</span><b>Cinbesa</b></div>
+        <article class="spot reveal pad project">
+          <span class="mono dim">Gov · Cinbesa</span>
           <h3>GiiG</h3>
-          <div class="client">Prestação de contas públicas</div>
-          <p><b>Desafio:</b> sistema público de prestação de contas da Prefeitura de Belém.<br><b>Entrega:</b> manutenção e evolução do sistema.</p>
-          <div class="glyph"><span class="mono ok">●</span><span class="mono">GIIG · PRESTAÇÃO DE CONTAS · OK</span></div>
-          <div class="tags"><span class="tag">.NET</span><span class="tag">SQL Server</span></div>
+          <p>Manutenção e evolução do sistema público de prestação de contas da Prefeitura de Belém.</p>
+          <div class="foot">
+            <span class="typed" data-text="GIIG · PRESTAÇÃO DE CONTAS · OK"></span>
+            <div class="pills"><span>.NET</span><span>SQL Server</span></div>
+          </div>
         </article>
-        <article class="card">
-          <span class="glare"></span>
-          <div class="sector mono"><span>Gov &amp; Segurança pública</span><b>SEAP-PA</b></div>
+        <article class="spot reveal pad project">
+          <span class="mono dim">Gov · SEAP-PA</span>
           <h3>INFOPEN</h3>
-          <div class="client">Gestão carcerária do Pará</div>
-          <p><b>Desafio:</b> sistema de gestão carcerária do Estado do Pará.<br><b>Entrega:</b> manutenção e evolução do sistema.</p>
-          <div class="glyph"><span class="mono ok">●</span><span class="mono">INFOPEN · GESTÃO CARCERÁRIA · OK</span></div>
-          <div class="tags"><span class="tag">.NET</span><span class="tag">SQL Server</span></div>
+          <p>Manutenção e evolução do sistema de gestão carcerária do Estado do Pará.</p>
+          <div class="foot">
+            <span class="typed" data-text="INFOPEN · GESTÃO CARCERÁRIA · OK"></span>
+            <div class="pills"><span>.NET</span><span>SQL Server</span></div>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- CENA 04 -->
-  <section class="scene process" id="processo" data-scene="04" data-name="Como funciona">
-    <div class="wrap">
-      <header class="scene-head">
-        <h2 class="display"><span class="trail" data-text="Como funciona">Como funciona</span></h2>
-        <p>Um caminho simples, sem termos técnicos e com combinados claros desde o início.</p>
-      </header>
-      <div class="services-grid steps-grid">
-        <article class="service">
-          <span class="mono">01</span>
-          <h3>Conversa</h3>
-          <p>Você conta o que precisa e eu entendo o seu negócio.</p>
-        </article>
-        <article class="service">
-          <span class="mono">02</span>
-          <h3>Proposta</h3>
-          <p>Escopo, prazo e valor combinados antes de começar.</p>
-        </article>
-        <article class="service">
-          <span class="mono">03</span>
-          <h3>Construção</h3>
-          <p>Entregas parciais para você acompanhar e opinar.</p>
-        </article>
-        <article class="service">
-          <span class="mono">04</span>
-          <h3>Entrega e suporte</h3>
-          <p>Publicação no ar, orientação de uso e suporte depois.</p>
-        </article>
-      </div>
+  <section class="stats">
+    <div class="container grid g3">
+      <div class="reveal"><p class="stat-n sunset"><span class="count" data-to="5">5</span>+</p><p class="stat-l">Anos de experiência no mercado</p><p class="mono dim">Web · Enterprise · Gov</p></div>
+      <div class="reveal"><p class="stat-n sunset"><span class="count" data-to="10">10</span>+</p><p class="stat-l">Sistemas de grande porte, aplicações internas e landing pages</p><p class="mono dim">Banking · Telecom · Gov</p></div>
+      <div class="reveal"><p class="stat-n sunset"><span class="count" data-to="5">5</span></p><p class="stat-l">Empresas e órgãos atendidos</p><p class="mono dim">Dreams · Sofintech · Wing · Cinbesa · SEAP-PA</p></div>
     </div>
   </section>
 
-  <!-- CENA 05 -->
-  <section class="scene metrics" id="metricas" data-scene="05" data-name="Números">
-    <div class="wrap">
-      <header class="scene-head">
-        <h2 class="display"><span class="trail" data-text="Quem já confiou no meu trabalho">Quem já confiou no meu trabalho</span></h2>
-      </header>
-
-      <div class="stat-grid">
-        <div class="stat">
-          <div class="num"><span class="count" data-to="5">5</span><sup>+</sup></div>
-          <div class="label">Anos de experiência no mercado</div>
-          <div class="note mono">Web · Enterprise · Gov</div>
-        </div>
-        <div class="stat">
-          <div class="num"><span class="count" data-to="10">10</span><sup>+</sup></div>
-          <div class="label">Sistemas de grande porte, aplicações internas e landing pages desenvolvidas</div>
-          <div class="note mono">Banking · Telecom · Gov</div>
-        </div>
-        <div class="stat">
-          <div class="num"><span class="count" data-to="5">5</span></div>
-          <div class="label">Empresas e órgãos atendidos</div>
-          <div class="note mono">Dreams Consultoria · Sofintech (BANPARÁ) · Wing Solutions · Cinbesa · SEAP-PA</div>
-        </div>
-      </div>
-
-      <div class="brands">
-        <div class="brand-row" id="brandRow">
-          <span class="b">BANPARÁ</span><span class="b">Wing Solutions</span><span class="b">Cinbesa</span><span class="b">SEAP-PA</span>
-        </div>
-      </div>
-    </div>
-    <div class="marquee mono" aria-hidden="true">
-      <div class="track" id="marquee">
-        <span><b>Pix</b> · Internet Banking PF/PJ</span><span><b>Mensageria</b> · Oi · TIM · Vivo</span><span><b>GiiG</b> · Prefeitura de Belém</span><span><b>INFOPEN</b> · Gestão carcerária do Pará</span><span><b>Vouchers</b> · Controle financeiro</span><span><b>Next.js</b> · AWS · Tailwind</span>
-        <span><b>Pix</b> · Internet Banking PF/PJ</span><span><b>Mensageria</b> · Oi · TIM · Vivo</span><span><b>GiiG</b> · Prefeitura de Belém</span><span><b>INFOPEN</b> · Gestão carcerária do Pará</span><span><b>Vouchers</b> · Controle financeiro</span><span><b>Next.js</b> · AWS · Tailwind</span>
-      </div>
+  <section class="section" id="processo">
+    <div class="container">
+      <p class="label mono">Processo</p>
+      <h2 class="reveal">Simples, transparente, sem surpresas.</h2>
+      <ol class="steps">
+        <li class="reveal"><span class="dot mono">01</span><h3>Conversa</h3><p>Você conta o que precisa e eu entendo o seu negócio.</p></li>
+        <li class="reveal"><span class="dot mono">02</span><h3>Proposta</h3><p>Escopo, prazo e valor combinados antes de começar.</p></li>
+        <li class="reveal"><span class="dot mono">03</span><h3>Construção</h3><p>Entregas parciais para você acompanhar e opinar.</p></li>
+        <li class="reveal"><span class="dot mono">04</span><h3>Entrega e suporte</h3><p>Publicação no ar, orientação de uso e suporte depois.</p></li>
+      </ol>
     </div>
   </section>
 
-  <!-- CENA 06 -->
-  <section class="scene about" id="sobre" data-scene="06" data-name="Sobre mim">
-    <div class="wrap">
-      <header class="scene-head">
-        <h2 class="display"><span class="trail" data-text="Sobre mim">Sobre mim</span></h2>
-      </header>
-      <div class="about-grid">
-        <figure class="about-photo">
-          <img src="img/maia.jpeg" alt="Caio Maia Almeida olhando o horizonte de um barco, de boné e óculos escuros" width="960" height="1280" loading="lazy" decoding="async">
-        </figure>
-        <div class="about-copy">
+  <section class="section" id="sobre">
+    <div class="container about">
+      <figure class="about-photo reveal">
+        <img src="img/maia.jpeg" alt="Caio Maia Almeida olhando o horizonte de um barco, de boné e óculos escuros" width="960" height="1280" loading="lazy" decoding="async">
+      </figure>
+      <div>
+        <p class="label mono">Sobre</p>
+        <h2 class="reveal">Eu ganho se a sua empresa ganha.</h2>
+        <div class="about-copy reveal">
           <p>Sou Caio Maia Almeida, desenvolvedor em Belém-PA. Comecei em 2019 no curso de Sistemas de Informação da UFPA, em Castanhal, escrevendo aplicações de console em C. Foi ali que descobri minha aptidão para lógica e programação.</p>
           <p>Depois, em um estágio no setor de segurança, criei as minhas primeiras páginas web. De lá para cá passei por banco, telecomunicações, setor público e agência, sempre construindo sistemas que as pessoas usam todos os dias.</p>
-          <p>Hoje trabalho com pequenas e médias empresas para modernizar suas estruturas, facilitar decisões com dados consolidados e bem armazenados, além de evitar gastos desnecessários. <span class="highlight">Eu ganho se a sua empresa ganha.</span></p>
+          <p>Hoje trabalho com pequenas e médias empresas para modernizar suas estruturas, facilitar decisões com dados consolidados e bem armazenados, além de evitar gastos desnecessários.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CENA 07 -->
-  <section class="scene cta" id="contato" data-scene="07" data-name="Contato">
-    <div class="wrap">
+  <section class="section" id="faq">
+    <div class="container narrow">
+      <p class="label mono">Perguntas frequentes</p>
+      <h2 class="reveal">Dúvidas comuns</h2>
+      <div class="faq reveal">
+        <details><summary>Quanto custa um site ou sistema?<span>+</span></summary><p>Depende do escopo. Depois de uma conversa rápida, envio uma proposta fechada com valor e prazo, sem surpresas.</p></details>
+        <details><summary>Quanto tempo leva?<span>+</span></summary><p>Landing pages costumam ficar prontas em poucas semanas. Sistemas e apps variam conforme as funcionalidades.</p></details>
+        <details><summary>Você dá suporte depois da entrega?<span>+</span></summary><p>Sim. Faço manutenção, evolução e suporte contínuo do que foi entregue.</p></details>
+        <details><summary>Atende fora de Belém?<span>+</span></summary><p>Sim, atendo empresas de todo o Brasil de forma remota.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section" id="contato">
+    <div class="container">
       <div class="cta-card">
-        <div class="cta-copy">
-        <h2 class="display" id="ctaTitle">Vamos construir algo incrível juntos?</h2>
-        <p>Conte o que você precisa: site, sistema, aplicativo ou solução com IA. Respondo pelo WhatsApp, e-mail ou LinkedIn.</p>
-        <div class="links">
-          <a class="link" href="https://wa.me/5591980471449?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
-            <span class="mono"><span>WhatsApp</span><span>↗</span></span>
-            <span class="val">Chamar no WhatsApp</span>
-          </a>
-          <a class="link" href="https://github.com/maiasb" target="_blank" rel="noopener">
-            <span class="mono"><span>GitHub</span><span>↗</span></span>
-            <span class="val">Ver repositórios</span>
-          </a>
-          <a class="link" href="https://www.linkedin.com/in/maiasb" target="_blank" rel="noopener">
-            <span class="mono"><span>LinkedIn</span><span>↗</span></span>
-            <span class="val">Conectar no LinkedIn</span>
-          </a>
-          <div class="link">
-            <span class="mono"><span>E-mail</span><a href="mailto:caio.maiasb@gmail.com" style="text-decoration:none">✉</a></span>
-            <span class="row"><span class="val" id="emailVal">caio.maiasb@gmail.com</span><button class="copy" id="copyBtn" type="button">Copiar</button></span>
-          </div>
-        </div>
+        <div class="cta-glow"></div>
+        <h2 class="reveal">Vamos construir algo <em class="sunset">incrível</em> juntos?</h2>
+        <p class="reveal">Conte o que você precisa: site, sistema, aplicativo ou solução com IA. Respondo pelo WhatsApp, e-mail ou LinkedIn com um caminho e uma proposta.</p>
+        <div class="ctas reveal">
+          <a class="btn primary magnetic" href="https://wa.me/5591980471449?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chamar no WhatsApp ↗</a>
+          <a class="btn ghost magnetic" href="https://www.linkedin.com/in/maiasb" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn ghost magnetic" href="https://github.com/maiasb" target="_blank" rel="noopener">GitHub ↗</a>
+          <button class="btn ghost magnetic" id="copyBtn" type="button" data-email="caio.maiasb@gmail.com">Copiar e-mail</button>
         </div>
       </div>
     </div>
@@ -351,12 +323,11 @@
 </main>
 
 <footer class="mono">
-  <div class="wrap"><span>© 2026 Caio Maia Almeida · Sócio na <a href="https://vulpin-code.vercel.app/" target="_blank" rel="noopener">VulpinCode ↗</a></span><span>Belém · PA</span></div>
+  <div class="container"><span>© 2026 Caio Maia Almeida · Sócio na <a href="https://vulpin-code.vercel.app/" target="_blank" rel="noopener">VulpinCode ↗</a></span><a href="mailto:caio.maiasb@gmail.com">caio.maiasb@gmail.com</a></div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="js/showreel.js"></script>
+<a class="wa-float" href="https://wa.me/5591980471449?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
 
+<script src="js/site.js"></script>
 </body>
 </html>
