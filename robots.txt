@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://maiasb.github.io/sitemap.xml
+Sitemap: https://odevmaia.com.br/sitemap.xml
