@@ -5,9 +5,11 @@
 
   /* imagem do hero: camada fixa com a mesma altura do hero (mantém o enquadramento) */
   const hero = document.getElementById('hero');
-  const syncHeroH = () => hero.style.setProperty('--hero-h', hero.offsetHeight + 'px');
-  syncHeroH();
-  new ResizeObserver(syncHeroH).observe(hero);
+  if (hero) {
+    const syncHeroH = () => hero.style.setProperty('--hero-h', hero.offsetHeight + 'px');
+    syncHeroH();
+    new ResizeObserver(syncHeroH).observe(hero);
+  }
 
   /* header: some ao rolar para baixo, volta ao subir */
   const nav = document.getElementById('nav');
@@ -179,6 +181,7 @@
   /* hero: assistente de IA em roteiro fixo (demonstração, sem modelo real) */
   const chatLog = document.getElementById('chatLog');
   const chatWrap = document.querySelector('.chat-wrap');
+  if (chatLog && chatWrap) {
   const scripts = [
     [['u', 'Me gera o relatório de vendas da semana?'], ['t', 'consultando pedidos', '47 vendas'], ['t', 'montando relatório', 'PDF pronto'], ['a', 'Pronto! 47 vendas, R$ 8.320 no total e ticket médio de R$ 177. Enviei o PDF por e-mail.']],
     [['u', 'Oi! Tem horário amanhã de manhã?'], ['t', 'consultando agenda', '3 horários livres'], ['a', 'Tenho 9h, 10h30 e 11h. Qual prefere?'], ['u', '10h30, por favor'], ['t', 'criando agendamento', 'confirmado'], ['a', 'Pronto! Agendado para amanhã às 10h30. Enviei a confirmação no seu WhatsApp.']],
@@ -220,9 +223,11 @@
     document.addEventListener('visibilitychange', sync);
   }
 
+  }
+
   /* copiar e-mail */
   const copyBtn = document.getElementById('copyBtn');
-  copyBtn.addEventListener('click', async () => {
+  if (copyBtn) copyBtn.addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(copyBtn.dataset.email);
       copyBtn.textContent = 'Copiado';
