@@ -180,6 +180,7 @@
   const chatLog = document.getElementById('chatLog');
   const chatWrap = document.querySelector('.chat-wrap');
   const scripts = [
+    [['u', 'Me gera o relatório de vendas da semana?'], ['t', 'consultando pedidos', '47 vendas'], ['t', 'montando relatório', 'PDF pronto'], ['a', 'Pronto! 47 vendas, R$ 8.320 no total e ticket médio de R$ 177. Enviei o PDF por e-mail.']],
     [['u', 'Oi! Tem horário amanhã de manhã?'], ['t', 'consultando agenda', '3 horários livres'], ['a', 'Tenho 9h, 10h30 e 11h. Qual prefere?'], ['u', '10h30, por favor'], ['t', 'criando agendamento', 'confirmado'], ['a', 'Pronto! Agendado para amanhã às 10h30. Enviei a confirmação no seu WhatsApp.']],
     [['u', 'Quanto falta pagar do pedido 1042?'], ['t', 'buscando pedido 1042', 'R$ 189,90 em aberto'], ['a', 'São R$ 189,90, com vencimento na sexta. Quer pagar por Pix?'], ['u', 'Quero!'], ['t', 'gerando cobrança Pix', 'QR Code pronto'], ['a', 'Enviei o QR Code aqui. Aviso você assim que o pagamento cair.']],
     [['u', 'Vocês têm o tênis preto no 42?'], ['t', 'consultando estoque', '3 unidades'], ['a', 'Temos 3 unidades. Posso reservar uma para retirada hoje?'], ['u', 'Pode reservar'], ['t', 'registrando reserva', 'reservado'], ['a', 'Reservado até as 18h. Te espero na loja!']],
