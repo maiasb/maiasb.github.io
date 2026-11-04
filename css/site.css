@@ -99,12 +99,6 @@ em { font-style: normal; }
 .typed::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--success); animation: pulse 1.4s ease-in-out infinite; flex: none; }
 .typed::after { content: "▍"; color: var(--primary); animation: caret 1s steps(1) infinite; }
 
-/* clientes */
-.clients { border-block: 1px solid var(--border); padding-block: 24px; overflow: hidden; }
-.marquee-mask { overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent); }
-.marquee-track { display: flex; flex: none; gap: 56px; padding-right: 56px; animation: marquee 40s linear infinite; }
-.marquee-track span { white-space: nowrap; font: 600 24px var(--font-display); color: color-mix(in oklab, var(--muted) 60%, transparent); transition: color .2s; }
-.marquee-track span:hover { color: var(--fg); }
 
 /* seções */
 .section { padding: 112px 0; }
@@ -143,8 +137,6 @@ em { font-style: normal; }
 .mini-stats b { display: block; font: 700 24px var(--font-display); }
 .mini-stats span { font-size: 12px; color: var(--muted); }
 .foot { margin-top: auto; padding-top: 32px; }
-.pills { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
-.pills span { padding: 4px 12px; border: 1px solid var(--border); border-radius: 99px; font: 11px var(--font-mono); color: var(--muted); }
 
 /* widgets dos projetos */
 .widget { margin-top: 24px; display: flex; flex-direction: column; gap: 14px; min-height: 270px; padding: 16px; border: 1px solid var(--border); border-radius: 16px; background: var(--bg); }
@@ -278,7 +270,6 @@ footer a { text-decoration: none; } footer a:hover { color: var(--fg); }
 /* animações */
 .js .reveal { opacity: 0; transform: translateY(28px); filter: blur(8px); transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1), filter .9s; }
 .js .reveal.in { opacity: 1; transform: none; filter: none; }
-@keyframes marquee { to { transform: translateX(-50%); } }
 @keyframes float { 50% { transform: translateY(-10px); } }
 @keyframes pulse { 50% { opacity: .35; } }
 @keyframes caret { 50% { opacity: 0; } }
