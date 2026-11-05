@@ -12,3 +12,4 @@
 - 2026-11-04: removidos Sistemas da home e de projetos; landing pages adicionadas à home; `js/site.js` protegido contra elementos ausentes.
 - 2026-11-04: removidas as etiquetas de stack (`.pills`) dos cards de projeto em `index.html` e `projetos/index.html`, e o CSS `.pills` de `css/site.css`.
 - 2026-11-04: removido o carrossel de clientes (`.clients`/`.marquee-*`) da home.
+- 2026-11-05: título da seção de landing pages trocado para "Seis landing pages desenvolvidas." (sem afirmar que estão no ar) em `index.html` e `projetos/index.html`.
