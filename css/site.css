@@ -212,7 +212,10 @@ em { font-style: normal; }
 
 /* sobre */
 .about { display: grid; grid-template-columns: 1fr 1.3fr; gap: 56px; align-items: center; }
+.about-team { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .about-photo { margin: 0; position: relative; }
+.about-photo figcaption { margin-top: 12px; display: grid; gap: 2px; font-size: 14px; }
+.about-photo figcaption span { font-size: 10px; color: var(--muted); }
 .about-photo img { position: relative; border: 1px solid var(--border); display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 1.5rem; filter: grayscale(100%); }
 .about-copy { margin-top: 24px; display: grid; gap: 16px; color: var(--muted); }
 
@@ -289,7 +292,7 @@ footer a { text-decoration: none; } footer a:hover { color: var(--fg); }
   .steps { grid-template-columns: 1fr; }
   .steps::before { display: none; }
   .about { grid-template-columns: 1fr; }
-  .about-photo { max-width: 360px; }
+  .about-team { max-width: 480px; }
   .nav ul { display: none; }
   .wa-float { display: flex; }
 }

@@ -11,6 +11,8 @@
 
 ## Feito
 
+- 2026-11-16: seção Sobre com equipe: Caio Maia Almeida (Engenheiro de Software e fundador) e Igor Soares Marinho (Desenvolvedor e cofundador), foto do Igor recortada em `img/igor.jpeg`. Pendente: conferir no navegador (desktop e celular) e confirmar se o Igor autoriza a foto e o nome no site.
+
 - 2026-11-16: chat de demonstração de IA removido do hero e mantido como seção própria (`#assistente-ia`, entre Serviços e Projetos); hero em coluna única. Decidir se a seção fica, muda de lugar ou sai da página.
 
 - 2026-11-07: identidade da MAIA DEVELOPMENT (manual de marca v1.0) aplicada: paleta preto/cinza/vermelho, Open Sans, logo e monograma, favicon, OG image, JSON-LD de Organization com CNPJ, textos em nome da empresa, rodapé com CNPJ; removidos hero-bg, halos e ruído.
