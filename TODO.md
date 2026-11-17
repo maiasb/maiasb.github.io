@@ -11,6 +11,8 @@
 
 ## Feito
 
+- 2026-11-16: removida a localidade Belém-PA da home (título, metas, JSON-LD, hero, Sobre, FAQ). Mantida a "Belém e Castanhal" do card Dra. Lenita Brasil (unidades do cliente, home e projetos). Pendente: decidir se mantém.
+
 - 2026-11-16: seção Sobre com equipe: Caio Maia Almeida (Engenheiro de Software e fundador) e Igor Soares Marinho (Desenvolvedor e cofundador), foto do Igor recortada em `img/igor.jpeg`. Pendente: conferir no navegador (desktop e celular) e confirmar se o Igor autoriza a foto e o nome no site.
 
 - 2026-11-16: chat de demonstração de IA removido do hero e mantido como seção própria (`#assistente-ia`, entre Serviços e Projetos); hero em coluna única. Decidir se a seção fica, muda de lugar ou sai da página.
