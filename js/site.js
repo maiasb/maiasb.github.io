@@ -3,14 +3,6 @@
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   root.classList.add('js');
 
-  /* imagem do hero: camada fixa com a mesma altura do hero (mantém o enquadramento) */
-  const hero = document.getElementById('hero');
-  if (hero) {
-    const syncHeroH = () => hero.style.setProperty('--hero-h', hero.offsetHeight + 'px');
-    syncHeroH();
-    new ResizeObserver(syncHeroH).observe(hero);
-  }
-
   /* header: some ao rolar para baixo, volta ao subir */
   const nav = document.getElementById('nav');
   let lastY = scrollY, tick = false;
