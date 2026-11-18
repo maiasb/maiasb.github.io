@@ -4,12 +4,16 @@
 
 - Obter a matriz vetorial (SVG/PDF) do logo e uma versão simplificada do monograma para favicon e nav pequena (o manual v1.0 só traz PNG; os ícones atuais são recortes raster).
 - Confirmar a razão social para usar como `legalName` no JSON-LD e no rodapé (hoje só consta o nome fantasia + CNPJ).
-- Trocar contatos pessoais (e-mail Gmail, LinkedIn e GitHub pessoais) por canais da empresa, se existirem.
-- Revisar os números da faixa de estatísticas (hoje descritos como experiência do fundador, não da empresa).
 - Conferir no navegador (desktop e celular) a home e a página `projetos/index.html` (cards sem as etiquetas de stack): card do Loteamento Inteligente em largura total e a ordem das seções (destaque no topo).
 - Decidir se o Loteamento Inteligente é produto próprio e, se for, ajustar o título da seção "Produto em destaque".
 
 ## Feito
+
+- 2026-11-18: site despersonalizado do Caio, tudo como equipe: removidos e-mail Gmail, LinkedIn e GitHub pessoais (botões, rodapé, JSON-LD), faixa de estatísticas (baseada no currículo dele), bio individual e o Person do JSON-LD; os três aparecem como cofundadores. Pendente: o WhatsApp (91 98047-1449) continua como único contato — confirmar se é número da empresa; sem e-mail no site até existir um da empresa.
+
+- 2026-11-18: Pedro Winicius da Silva Brito adicionado à seção Sobre (`img/pedro.jpeg`, mesmo efeito P&B + luz vermelha); equipe em 3 colunas. Cargo: "Desenvolvedor, gestor de tráfego e cofundador". Pendente: conferir o layout no navegador e se ele autoriza foto e nome no site (a camisa mostra o logo de outra empresa, "Dreams").
+
+- 2026-11-18: foto do Igor trocada pela versão em P&B com luz vermelha (`img/igor.jpeg`, recorte do print) e o mesmo efeito aplicado à foto do Caio (`img/maia.jpeg`, gerado por script: recorte automático + P&B + luz vermelha, original preservado fora do repo). Removido o `filter: grayscale` de `.about-photo img` (anularia o vermelho). Pendente: conferir no navegador; se quiser acabamento igual ao da IA da foto do Igor, refazer a do Caio na mesma ferramenta.
 
 - 2026-11-16: removida a localidade Belém-PA da home (título, metas, JSON-LD, hero, Sobre, FAQ). Mantida a "Belém e Castanhal" do card Dra. Lenita Brasil (unidades do cliente, home e projetos). Pendente: decidir se mantém.
 

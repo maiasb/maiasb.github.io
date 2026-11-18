@@ -197,10 +197,6 @@ em { font-style: normal; }
 .legend b { color: var(--fg); font-weight: 600; }
 
 /* números */
-.stats { border-block: 1px solid var(--border); padding: 80px 0; }
-.stats .grid { margin-top: 0; gap: 40px; }
-.stat-n { font: 700 clamp(56px, 8vw, 72px)/1.1 var(--font-display); letter-spacing: -.03em; }
-.stat-l { margin-top: 8px; font-size: 18px; font-weight: 600; max-width: 26ch; }
 
 /* processo */
 .steps { position: relative; margin: 56px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
@@ -211,12 +207,12 @@ em { font-style: normal; }
 .steps p { margin-top: 8px; color: var(--muted); }
 
 /* sobre */
-.about { display: grid; grid-template-columns: 1fr 1.3fr; gap: 56px; align-items: center; }
-.about-team { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.about { display: grid; grid-template-columns: 1.6fr 1fr; gap: 56px; align-items: center; }
+.about-team { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .about-photo { margin: 0; position: relative; }
 .about-photo figcaption { margin-top: 12px; display: grid; gap: 2px; font-size: 14px; }
 .about-photo figcaption span { font-size: 10px; color: var(--muted); }
-.about-photo img { position: relative; border: 1px solid var(--border); display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 1.5rem; filter: grayscale(100%); }
+.about-photo img { position: relative; border: 1px solid var(--border); display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 1.5rem; }
 .about-copy { margin-top: 24px; display: grid; gap: 16px; color: var(--muted); }
 
 /* faq */
@@ -292,7 +288,7 @@ footer a { text-decoration: none; } footer a:hover { color: var(--fg); }
   .steps { grid-template-columns: 1fr; }
   .steps::before { display: none; }
   .about { grid-template-columns: 1fr; }
-  .about-team { max-width: 480px; }
+  .about-team { gap: 10px; }
   .nav ul { display: none; }
   .wa-float { display: flex; }
 }

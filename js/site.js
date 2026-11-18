@@ -227,15 +227,4 @@
 
   }
 
-  /* copiar e-mail */
-  const copyBtn = document.getElementById('copyBtn');
-  if (copyBtn) copyBtn.addEventListener('click', async () => {
-    try {
-      await navigator.clipboard.writeText(copyBtn.dataset.email);
-      copyBtn.textContent = 'Copiado';
-    } catch (e) {
-      copyBtn.textContent = copyBtn.dataset.email;
-    }
-    setTimeout(() => { copyBtn.textContent = 'Copiar e-mail'; }, 2200);
-  });
 })();
